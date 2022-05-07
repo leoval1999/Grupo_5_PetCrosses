@@ -1,7 +1,7 @@
 # Grupo_5_PetCrosses
 
 Descripcion del Proyecto
-El objetivo de este proyecto, es diseñar una página Web de un e-commerce, que trate sobre la vinculacion de mascotas con el objetivo de cruzarlos,
+* El objetivo de este proyecto, es diseñar una página Web de un e-commerce, que trate sobre la vinculacion de mascotas con el objetivo de cruzarlos,
 además también incluria un petShop.
 En la misma los usuarios deberan registrarse y también registrar a la mascota a la cual quieran cruzar.
 El público a captar es todas aquellas personas que cuenten con Mascotas, y tengan ganas de cruzarlas con mascostas de la misma raza y
@@ -17,7 +17,7 @@ Actualmente no trabajo, pero, me dedico a estudiar... Me gustan los videojuegos 
  y actualmente me encuentro trabajando para la empresa Andreani.
  Mi meta terminar de capacitarse en programacion y comenzar a trabajar de esto para alguna empresa del exterior.
 
-*Roxana Markiewicz: Soy Roxana, pero todos me dicen Rox. Tengo 30 años. 
+* Roxana Markiewicz: Soy Roxana, pero todos me dicen Rox. Tengo 30 años. 
 Soy ingeniera química y hace un año aproximadamente comencé a incursionar en la programación.
 Trabajo de manera independiente brindando asesoramiento y soporte técnico a empresas, como así también en el desarrollo de proyectos propios.
 Como pasatiempo me gusta mirar series o realizar actividades al aire libre. 
