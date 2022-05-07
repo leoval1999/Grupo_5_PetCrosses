@@ -26,4 +26,4 @@ Mi meta profecional a corto plazo es poder fusionar mis conocimientos en ingenie
 * Leonel Valenzuela: me llamo Leonel, tengo 23 años, soy estudiante de la carrera Contador Público (4to año), me interse por la programacion a finales de 2021
 cuando vi un curso gratuito y presencial en el poloTic, actualmente estoy haciendo otro curso de programacion web full stack con JAVA y el Argentina Programa.
 En mis tiempos libres juego Futsal y paso tiempo con mis amigos.
-Mis metas son recibirme de contador y poder conseguir algún trabajo como programador.
+Mis metas son recibirme de contador y poder conseguir algún trabajo como programador...
