@@ -27,3 +27,16 @@ Mi meta profecional a corto plazo es poder fusionar mis conocimientos en ingenie
 cuando vi un curso gratuito y presencial en el poloTic, actualmente estoy haciendo otro curso de programacion web full stack con JAVA y el Argentina Programa.
 En mis tiempos libres juego Futsal y paso tiempo con mis amigos.
 Mis metas son recibirme de contador y poder conseguir algún trabajo como programador...
+
+
+Referentes:
+* Encabezado:match dog
+* Carretel: Mercado libre/ospan/petlove/pulpos
+* Descripción de la web: purina (sección ¿que es purina?)/matchdog (nuestra app)
+* Envió y formas de pago: mercado libre/total pet
+* Testimonios: ospan/purina( ¿que es purina? y mi mascota
+Links:
+* https://matchdog.app/es/
+* https://www.mercadolibre.com.ar/
+* https://ospan.com.ar/
+
