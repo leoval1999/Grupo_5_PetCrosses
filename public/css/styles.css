@@ -1,0 +1,36 @@
+header{
+    display: flex;
+    border: solid 2px red;
+    background-color: rgb(3, 132, 110);
+    justify-content: space-between;
+}
+.items{
+    width: 70vw;
+    display: flex;
+    justify-content: space-between;
+    border: solid 5px blue;
+   
+}
+.logo{
+    font-size: 5vw;
+    border: solid 2px black;
+    align-self: center;
+    width: 6.5vw;
+}
+.navegacion{
+    display: flex;
+    width: 70vw;
+    border: solid 10px orange;
+    justify-content: space-between;
+}
+.centro-opcion{
+    display: flex;
+    border: solid 2px brown;
+}
+.der-opcion{
+    border: solid
+     2px yellow;
+}
+h2{
+    margin-right: 5vw;
+}
