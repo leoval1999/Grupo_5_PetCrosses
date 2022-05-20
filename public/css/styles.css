@@ -1,36 +1,79 @@
-header{
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+header {
     display: flex;
-    border: solid 2px red;
+    flex-wrap: wrap;
     background-color: rgb(3, 132, 110);
     justify-content: space-between;
+
 }
-.items{
-    width: 70vw;
+.nav{
+    width: 100%;
+    border: solid 5px red;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+.items {
+    
+    border: solid 5px green;
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    border: solid 5px blue;
-   
 }
+
 .logo{
-    font-size: 5vw;
-    border: solid 2px black;
-    align-self: center;
-    width: 6.5vw;
+    border: solid 5px orange;
+    width: 100%
 }
-.navegacion{
+#logo{
+   
+    width: 100%;
+}
+.centro-opcion {
+    border: solid 5px yellow;
+    justify-content: center;
+    align-items: center;
     display: flex;
-    width: 70vw;
-    border: solid 10px orange;
-    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+
 }
-.centro-opcion{
+.centro-opcion a {
+    text-decoration: none;
+    color: black;
+}
+.der-opcion {
+   
     display: flex;
-    border: solid 2px brown;
+    justify-content: center;
+    align-items: center;
 }
-.der-opcion{
-    border: solid
-     2px yellow;
+
+.der-opcion a {
+    color: black;
+    margin-right: 30px;
+    font-size: 30px;
 }
-h2{
+
+#icono-registro {
+    color: rgb(128, 128, 128);
+
+}
+
+h2 {
     margin-right: 5vw;
+}
+
+@media (min-width: 768px){
+    .logo{
+        width: 40%;
+    }
+    .nav{
+        width: 60%;
+        justify-content: space-between;
+    }
 }
