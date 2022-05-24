@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,27 +9,268 @@
     <link rel="stylesheet" href="/css/styles.css">
     <script src="https://kit.fontawesome.com/2e3686342e.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2e3686342e.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
-       
-        <div class="logo"><a href="/"><img id = "logo"src="/img/logo .jpeg" alt="Inicio"></a></div>
-        <div class = " nav ">
-        <div class="centro-opcion">
-            <a href="/citas"><h2 class="citas">Citas</h2></a>
-            <a href="/petshop"><h2 class="petshop">PetShop</h2></a>
 
-        </div>
-        <div class="items"><nav class="navegacion">
-            
-            <div class="der-opcion">
-                <a href="/buscador" class="buscador"><i class="fa-solid fa-magnifying-glass"></i></a>
-                <a href="/registro" id ="icono-registro"><i class="fa-solid fa-circle-user"></i></a>
-                <a href="/carrito-compras" class="carrito"><i class="fa-solid fa-cart-shopping"></i></a>
+        <div class="logo"><a href="/"><img id="logo" src="/img/logo2.jpeg" alt="Inicio"></a></div>
+        <div class=" nav ">
+            <div class="centro-opcion">
+                <a href="/citas">
+                    <h2 class="citas">Citas</h2>
+                </a>
+                <a href="/petshop">
+                    <h2 class="petshop">PetShop</h2>
+                </a>
+
             </div>
-        </nav></div>
-    </div> 
+            <div class="items">
+                <nav class="navegacion">
+
+                    <div class="der-opcion">
+                        <a href="/buscador" class="buscador"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <a href="/registro" id="icono-registro"><i class="fa-solid fa-circle-user"></i></a>
+                        <a href="/carrito-compras" class="carrito"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </nav>
+            </div>
+        </div>
 
     </header>
+
+    <main class="principal">
+        <div id="conteItemsCarrusel">
+            <div class="itemCarrusel" id="itemCarrusel-1">
+                <div class="tarjetaCarrusel" id="tarjetaCarrusel-1"><img src="/img/perro1.jpg" alt="item-1-carrusel">
+                </div>
+                <div class="flechasCarrusel">
+                    <a href="#itemCarrusel-3"> <i><i class="fa-solid fa-circle-chevron-left"></i></i></a>
+                    <a href="#itemCarrusel-2"><i><i class="fa-solid fa-circle-chevron-right"></i></i> </a>
+                </div>
+            </div>
+
+            <div class="itemCarrusel" id="itemCarrusel-2">
+                <div class="tarjetaCarrusel" id="tarjetaCarrusel-2"><img src="/img/perro2.jpg" alt="item-2-carrusel">
+                </div>
+                <div class="flechasCarrusel">
+                    <a href="#itemCarrusel-1"> <i><i class="fa-solid fa-circle-chevron-left"></i></i></a>
+                    <a href="#itemCarrusel-3"><i><i class="fa-solid fa-circle-chevron-right"></i></i> </a>
+                </div>
+
+            </div>
+
+            <div class="itemCarrusel" id="itemCarrusel-3">
+                <div class="tarjetaCarrusel" id="tarjetaCarrusel-3"><img src="/img/perro3.jpg" alt="item-3-carrusel">
+                </div>
+                <div class="flechasCarrusel">
+                    <a href="#itemCarrusel-2"> <i><i class="fa-solid fa-circle-chevron-left"></i></i></a>
+                    <a href="#itemCarrusel-1"><i><i class="fa-solid fa-circle-chevron-right"></i></i> </a>
+                </div>
+
+            </div>
+        </div>
+        <div id="contePuntos">
+            <a href="#itemCarrusel-1"><i class="fa-solid fa-circle"></i> </a>
+            <a href="#itemCarrusel-2"><i class="fa-solid fa-circle"></i> </a>
+            <a href="#itemCarrusel-3"><i class="fa-solid fa-circle"></i> </a>
+        </div>
+
+        <section class="nosotros">
+            <p class="texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Impedit rerum porro similique a, ut aliquid, quae modi,
+                consequatur assumenda at ad laudantium dolore saepe minus excepturi doloremque distinctio repellendus
+                veniam?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ad ex nam excepturi, repudiandae
+                facilis beatae natus.
+                Repellendus velit nobis earum neque quia, eos totam fuga, nesciunt numquam qui dolore?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+        </section>
+        <section class="productos-destacados">
+            <h2 class="titulo-productos">PRODUCTOS DESTACADOS</h2>
+            <article class="art-producto">
+                <h4 class="titulo-articulo">Collar Antipulgas Seresto</h4>
+                <a href="#"><img id="destacado-1" src="/img/collar-anti.jpg" alt="collar anti pulgas"></a>
+                <div class="descripciones">
+                    <p>Marca : Seresto<br>
+                        Para perros de más de 8kg</p>
+                </div>
+                <div class="padre-precio">
+                    <p class="precio">$999</p>
+                </div>
+
+            </article>
+            <article class="art-producto">
+                <h4 class="titulo-articulo">Collar</h4>
+                <a href="#"><img id="destacado-2" src="/img/collar.webp" alt="collar"></a>
+                <div class="descripciones">
+                    <p>Collar 25mm ancho, totalmente regulable</p>
+                </div>
+                <div class="padre-precio">
+                    <p class="precio">$449</p>
+                </div>
+
+            </article>
+            <article class="art-producto">
+                <h4 class="titulo-articulo">Juguete para Perro</h4>
+                <a href="#"><img id="destacado-3" src="/img/jueguete-perro.jpg" alt="juguete perro"></a>
+                <div class="descripciones">
+                    <p>Hueso de goma ajedrez</p>
+                </div>
+                <div class="padre-precio">
+                    <p class="precio">$519</p>
+                </div>
+
+            </article>
+            <article class="art-producto">
+                <h4 class="titulo-articulo">Correa</h4>
+                <a href="#"><img id="destacado-4" src="/img/correa.webp" alt="correa"></a>
+                <div class="descripciones">
+                    <p>Correa de cuero apto para perros de tamaño mediano</p>
+                </div>
+                <div class="padre-precio">
+                    <p class="precio">$499</p>
+                </div>
+
+            </article>
+            <article class="art-producto">
+                <h4 class="titulo-articulo">Plato Agua-Comida</h4>
+                <a href="#"><img id="destacado-5" src="/img/plato-perro.jpg" alt="plato perro"></a>
+                <div class="descripciones">
+                    <p>Con divisoria para alimento y Agua</p>
+                </div>
+                <div class="padre-precio">
+                    <p class="precio">$299</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="formas-pago">
+            <div class="opcion">
+                <i class="fa-solid fa-truck"></i>
+                <p class="envio">ENVIO GRATIS</p>
+                <a href="#" class="envio-gratis">Link a producto con envío gratis</a>
+            </div>
+            <div class="opcion">
+                <i class="fa-solid fa-credit-card"></i>
+                <p class="tarjeta">TARJETA DE CRÉDITO Y DÉBITO</p>
+                <a href="#" class="tarjetas-habilitadas">Link a tarjetas habilitadas</a>
+            </div>
+            <div class="opcion">
+                <i class="fa-solid fa-sack-dollar"></i>
+                <p class="efectivo">EFECTIVO</p>
+                <a href="#" class="efectivo">En sucursales</a>
+            </div>
+            <div class="opcion">
+                <i class="fa-solid fa-dollar-sign"></i>
+                <p class="cuotas">CUOTAS SIN INTÉRES</p>
+                <a href="#" class="cuotas-interes">Productos sin Interés</a>
+            </div>
+        </section>
+        <section>
+            <article class="titulo-marca">
+                <h2 class="destacadas">MARCAS DESTACADAS</h2>
+            </article>
+            <div class="marcas-destacadas">
+            <article class="marcas">
+                <div>
+                    <img id="" src="/img/Dog-chow.webp" alt="Dog-chow">
+                </div>
+                <div>
+                    <img id="" src="/img/pedigree.jpg" alt="Pedigree">
+                </div>
+                <div>
+                    <img id="" src="/img/pet-food.jpg" alt="Pet Food">
+                </div>
+                <div>
+                    <img id="" src="/img/purina-cat.png" alt="Purina cat">
+                </div>
+                <div>
+                    <img id="" src="/img/purina.webp" alt="Purina">
+                </div>
+                <div>
+                    <img id="" src="/img/royal-canin.png" alt="Royal Canin">
+                </div>
+                <div>
+                    <img id="" src="/img/supercan.jpg" alt="Super can">
+                </div>
+                <div>
+                    <img id="" src="/img/supreme.png" alt="Supreme">
+                </div>
+            </article>
+        </div>
+        </section>
+
+        <section class="testimo">
+            <article class = "titulo.testimonio">
+                <h2 class="titulo test">TESTIMONIOS</h2>
+            </article>
+            <div class="testimonios">
+            <article class="item-testimonio">
+                <div class="sub-item-1">
+                    <img id="img-testimonio" src="/img/testimonio-1.jpg" alt="">
+                </div>
+                <div class="sub-item-2">
+                    <h4>Fulanito Malabares</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam assumenda optio impedit aut. 
+                        Dolorem numquam placeat 
+                        quo error cupiditate labore voluptatibus ab, iure dolor hic quam tempore, nobis, quod at.</p>
+                </div>
+            </article>
+            <article class="item-testimonio">
+                <div class="sub-item-1">
+                    <img id = "img-testimonio" src="/img/testimonio-2.jpg" alt="">
+                </div>
+                <div class="sub-item-2">
+                    <h4>Fulanito Malabares</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam assumenda optio impedit aut. 
+                        Dolorem numquam placeat quo error cupiditate labore voluptatibus ab, iure dolor hic quam tempore, 
+                        nobis, quod at.</p>
+                </div>
+            </article>
+            <article class="item-testimonio">
+                <div class="sub-item-1">
+                    <img id="img-testimonio" src="/img/testimonio-3.jpg" alt="">
+                </div>
+                <div class="sub-item-2">
+                    <h4>Fulanito Malabares</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam assumenda optio impedit aut.
+                         Dolorem numquam placeat quo error cupiditate labore voluptatibus ab, iure 
+                         dolor hic quam tempore, nobis, quod at.</p>
+                </div>
+            </article>
+        </div>
+        </section>
+
+    </main>
+    <footer class="pie-pagina">
+        <div class="logo-pie"><a href="/"><img id="logo-pie" src="/img/logo2.jpeg" alt="Inicio"></a></div>
+        <div class="contactenos">
+            <h4 class="titulo">CONTACTENOS</h4>
+            <p><i id="tf" class="fa-solid fa-phone"></i> (+54) 4456789</p>
+            <p><i id="mail" class="fa-solid fa-envelope"></i> correofalso@gmail.com</p>
+            <p><i id="ubi" class="fa-solid fa-location-dot"></i> Posadas-Misiones Calle Falsa 123</p>
+            <p>&copy; PetCrosses 2022</p>
+
+        </div>
+        <div class="redes-footer">
+            <div>
+                <h4 class="titulo">REDES</h4>
+            </div>
+            <div class="redes"> <a href="https://www.facebook.com/"><i id="fb"
+                        class="fa-brands fa-facebook-square">Facebook</i></a>
+                <a href="https://www.instagram.com/"> <i id="ig" class="fa-brands fa-instagram-square">Instagram</i></a>
+                <a href="https://twitter.com/"><i id="tw" class="fa-brands fa-twitter-square">Twitter</i></a>
+                <a href="https://www.whatsapp.com/?lang=es"><i id="wp"
+                        class="fa-brands fa-whatsapp-square">Whatsapp</i></a>
+            </div>
+
+        </div>
+
+    </footer>
 </body>
+
 </html>
