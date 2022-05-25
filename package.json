@@ -1,7 +1,7 @@
 {
   "name": "petcrosses",
   "version": "1.0.0",
-  "description": "",
+  "description": "Descripcion del Proyecto\r * El objetivo de este proyecto, es diseñar una página Web de un e-commerce, que trate sobre la vinculacion de mascotas con el objetivo de cruzarlos,\r además también incluiría un petShop.\r En la misma los usuarios deberan registrarse y también registrar a la mascota a la cual quieran cruzar.\r El público a captar son todas aquellas personas que cuenten con Mascotas, y tengan ganas de cruzarlas con mascostas de la misma raza y\r aquellas que quieran comprar articulos para mascostas.",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

@@ -3,13 +3,15 @@
     padding: 0;
     margin: 0;
 }
+body {
+    background-color: #da7575;
+}
 header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color:#DC8B8b;
+    background-color:#dd8e8e;
     border-bottom: solid 3px black;
-
 }
 .nav{
     width: 100%;    
@@ -87,12 +89,11 @@ h2 {
     padding: 20px;
 }
 #conteItemsCarrusel{
-
     height: 300px;
-    
     overflow: hidden;
-    
-    
+    box-shadow: -1px 7px 28px -3px rgba(0,0,0,0.72);
+    -webkit-box-shadow: -1px 7px 28px -3px rgba(0,0,0,0.72);
+    -moz-box-shadow: -1px 7px 28px -3px rgba(0,0,0,0.72);
 }
 a{
     text-decoration: none;
@@ -107,7 +108,7 @@ a{
 }
 #contePuntos > a{
     font-size: 1em;
-    color: gray;
+    color: black;
 
 }
 .itemCarrusel img{
@@ -133,6 +134,7 @@ a{
     border-right: solid 1px white;
     line-height: 30px;
     margin-bottom: 10px;
+    
 }
 .redes-footer{
     text-align: center;
@@ -162,7 +164,11 @@ a{
     font-size: 30px;
     line-height: 38px;
     width: 80%;
-    /*border: solid 5px red;*/
+    border: 3px solid rgb(255, 207, 235);
+    border-radius: 10px;
+    box-shadow: 10px 4px 84px -25px rgba(0,0,0,0.55);
+    -webkit-box-shadow: 10px 4px 84px -25px rgba(0,0,0,0.55);
+    -moz-box-shadow: 10px 4px 84px -25px rgba(0,0,0,0.55);
 }
 
 /* ---------------------------------------- PRODUCTOS ------------------------------------------------------ */
@@ -171,11 +177,13 @@ a{
     padding: 10px;
     margin: 5px;
     border: solid 1px black;
+    border-radius: 10px;
 }
 .titulo-productos{
     margin-bottom: 10px;
     margin-left: 10px;
 }
+
 .productos-destacados article a {
     width: 100%;
     margin: auto;
@@ -189,11 +197,12 @@ a{
 }
 .precio {
     font-size: 1.2em;
-    margin: 10px;
-    width: 50px;
+    margin-top: 10px;
+    width: 40%;
+    text-align: center;
     border: solid 2px gray;
     background-color: rgb(255, 207, 235);
-    border-radius: 2px;
+    border-radius: 5px;
     
 }
 .descripciones p{
@@ -201,6 +210,12 @@ a{
 }
 .titulo-articulo {
     font-size: 1.5em;
+}
+.titulo-articulo a {
+    color: black;
+}
+.productos-destacados-pc-1 {
+    display: none;
 }
 /*----------------------------------- FORMAS DE PAGO------------------------------------------------------------- */
 .formas-pago{
@@ -345,4 +360,21 @@ text-align: center;
        align-items:center ;
     
    }
+   .productos-destacados-pc {
+       display: flex;
+   }
+   .productos-destacados-pc article {
+       width: 20%;       
+   }
+   .formas-pago {
+       display: flex;
+   }
+   .opcion {
+       width: 25%;
+   }
+   #conteItemsCarrusel {
+       height: 500px;
+   }
+
+
 }
