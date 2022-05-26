@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetCrosses</title>
     <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/registro.css">
+    <link rel="stylesheet" href="/css/detalle.css">
     <script src="https://kit.fontawesome.com/2e3686342e.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2e3686342e.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="body">
     <header>
 
         <div class="logo"><a href="/"><img id="logo" src="/img/logo2.jpeg" alt="Inicio"></a></div>
@@ -31,8 +31,9 @@
             <div class="items">
                 <nav class="navegacion">
 
+
                     <div class="der-opcion">
-                        <a href="/buscador" class="buscador"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <a href="/search" id="buscador"><i class="fa-solid fa-magnifying-glass"></i></a>
                         <a href="/registro" id="icono-registro"><i class="fa-solid fa-circle-user"></i></a>
                         <a href="/carrito-compras" class="carrito"><i class="fa-solid fa-cart-shopping"></i></a>
                     </div>
@@ -41,31 +42,62 @@
         </div>
 
     </header>
-    <section class="section-formulario">
-        <div class="formulario">
-            <form action="/ingresar" method="POST">
-                <h4 id="subtitulo">INICIAR SESIÓN</h4>
-                <div class="input">
-                    <input type="email" name="correo" placeholder=" Correo electrónico" required id="Correo">
+    <main class="principal-detalle">
+        <div class="detalle-pc-1">
+        <section class = "img-detalles">
+            <article class="imagen-grande">
+                <div class="imagen-detalle">
+                    <img id="img-detalle" src="/img/collar-anti.jpg" alt="">
+
                 </div>
-                <div class="input">
-                    <input type="password" name="contraseña" placeholder=" Contraseña" required id="contraseña">
-                </div>
-                <div class="recordar-cuenta">
-                    <label><input type="radio" name="recordar" value="contrar"> Recordar</label>
-                </div>
-                <div class="recuperar-pass">
-                    <p>¿Olvidaste tu contraseña? Haz <a href="/recuperar-cuenta" style="color: red;">Click Aqui</a> para recuperarla.</p>
+            </article>
+            <article class="imagen-chica">
+                <div>
+                    <img id="img-chica-1" src="/img/collar-anti-seresto-2.jpg" alt="">
                 </div>
                 <div>
-                    <input id="boton-login" type="submit" value="INICIAR SESIÓN">
+                    <img src="/img/collar-anti-seresto-3.jpg" alt="">
                 </div>
-            </form>
-            <div class="padre-boton-crear-cuenta">
-                <a href="/registro" id="boton-crear-cuenta">Crear cuenta</a>
-            </div>
-        </div>
-    </section>
+                <div>
+                    <img src="img/collar-anti-seresto-4.jpg" alt="">
+                </div>
+            </article>
+
+        </section>
+        <section class="detalle-titulo">
+            <h4 class="titulo-producto">Collar Anti-pulgas Seresto</h4>
+            <p class="stock">Stock disponible: 5</p>
+            <p class="precio-anterior"> PRECIO ANTERIOR: $2000</p>
+            <h4 class="precio-actual">Precio: $1500</h4>
+            <p class="cuotas">Cuotas: en 12 x $208,33</p>
+        </section>
+    </div>
+    <div class="detalle-pc-2">
+        <section class="descripcion">
+            <p id="titulo-desc">DESCRIPCIÓN</p>
+            <p id ="descripcion">
+                Resistente al agua <br>
+                Con una duración de 8 meses <br>
+                Inoloro <br>
+
+            </p>
+        </section>
+        <section class="botones-adquirir">
+            <div class="opciones-producto">
+                <div class="cantidad">
+                    <p>Cantidad</p>
+                    <input  id = "boton-cantidad" type="number" name="cantidad">
+                </div>
+                <div>
+                    <div class="padre-boton-finalizar">
+                        <a href="/carrito-compras" id="boton-finalizar">Agregar al carrito</a>
+                    </div>
+                </div>
+        </section>
+    </div>
+    </main>
+
+
     <footer class="pie-pagina">
         <div class="logo-pie"><a href="/"><img id="logo-pie" src="/img/logo2.jpeg" alt="Inicio"></a></div>
         <div class="contactenos">
@@ -91,3 +123,6 @@
         </div>
 
     </footer>
+</body>
+
+</html>

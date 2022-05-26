@@ -67,6 +67,7 @@
 #boton-registrarme:hover {
     background: rgb(236, 151, 164) ;
     padding: 10px;
+    border: 2px solid black;
 }
 #boton-login{
     font-size: 18px;
@@ -81,10 +82,45 @@
 #boton-login:hover {
     background: rgb(236, 151, 164) ;
     padding: 10px;
+    border: 2px solid black;
 }
+.padre-boton-crear-cuenta {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#boton-crear-cuenta{
+    color: black;
+    width: 30%;
+    font-size: 14px;
+    border: solid 2px gray;
+    border-radius: 5px;
+    background: white;
+    padding: 2px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+#boton-crear-cuenta:hover {
+    background: rgb(236, 151, 164) ;
+    padding: 5px;
+    border: 2px solid black;
+}
+.recuperar-pass {
+    text-align: center;
+    margin-top: 7px;
+}
+.recordar-cuenta {
+    text-align: left;
+    margin-top: 5px;
+}
+
 
 @media (min-width:768px){
     .formulario{
         width:50%;
     }
+    #boton-crear-cuenta{
+        width: 20%;
+    }
+
 }
