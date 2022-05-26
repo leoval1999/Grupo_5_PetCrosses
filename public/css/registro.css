@@ -1,0 +1,90 @@
+.section-formulario {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+.formulario {
+    width: 100%;
+    text-align: center;
+    padding: 10px 10px;
+    margin: 30px 0px;
+    border-radius: 5px;
+    background-color:rgb(255, 207, 235);
+    -webkit-box-shadow: 11px 17px 11px -1px rgba(247,99,247,0.59);
+    -moz-box-shadow: 11px 17px 11px -1px rgba(247,99,247,0.59);
+    box-shadow: 11px 17px 11px -1px rgba(247,99,247,0.59);
+}
+
+#subtitulo {
+    font-size: 2em;
+    margin: 20px 0px;
+}
+.nombre-apellido {
+    display: flex;
+    justify-content: space-between;
+}
+.nombre-apellido input{
+  width: 47%;
+  margin: 5px 0px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 16px;
+  background: rgb(249, 249, 249);
+}
+.input input{
+    width: 100%;
+    height: 40px;
+    margin: 5px 0px;
+    border-radius: 5px;
+    font-size: 16px;
+    background: rgb(249, 249, 249);
+}
+#fecha-de-nacimiento {
+    text-align: left;
+    margin-left: 10px;
+}
+.sexo {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0px;
+}
+.sexo label {
+    font-size: 16px;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+#boton-registrarme{
+    font-size: 18px;
+    border: solid 2px black;
+    border-radius: 5px;
+    background: white;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: background-color .5s;
+}
+#boton-registrarme:hover {
+    background: rgb(236, 151, 164) ;
+    padding: 10px;
+}
+#boton-login{
+    font-size: 18px;
+    border: solid 2px black;
+    border-radius: 5px;
+    background: white;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: background-color .5s;
+}
+#boton-login:hover {
+    background: rgb(236, 151, 164) ;
+    padding: 10px;
+}
+
+@media (min-width:768px){
+    .formulario{
+        width:50%;
+    }
+}

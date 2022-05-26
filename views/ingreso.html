@@ -43,47 +43,19 @@
     </header>
     <section class="section-formulario">
         <div class="formulario">
-            <form action="/registrar" method="POST">
-                <h4 id="subtitulo">REGISTRATE</h4>
-                <div class="nombre-apellido">
-                    <input type="text" name="nombre" placeholder=" Indique su nombre" required id="Nombre">
-                    <input type="text" name="apellido" placeholder=" Indique su apellido" required id="Apellido"> 
-                </div>
+            <form action="/ingresar" method="POST">
+                <h4 id="subtitulo">INICIAR SESIÓN</h4>
                 <div class="input">
                     <input type="email" name="correo" placeholder=" Correo electrónico" required id="Correo">
                 </div>
                 <div class="input">
                     <input type="password" name="contraseña" placeholder=" Contraseña" required id="contraseña">
                 </div>
-                <div class="input">
-                    <input type="password" name="contraseña" placeholder=" Repita su contraseña" required id="contraseña">
-                </div>
-                <div id="fecha-de-nacimiento">
-                    <p>Fecha de nacimiento</p>
-                </div>
-                <div class="input">
-                    <input type="date" name="fecha-nacimiento" placeholder=" Fecha de nacimiento" required id="fecha-nacimiento">
-                </div>
-                <div class="sexo">
-                    <div>
-                        <label><input type="radio" name="sexo" value="Hombre"> Hombre</label>
-                    
-                    </div>
-                    <div>
-                        <label><input type="radio" name="sexo" value="Mujer"> Mujer</label>
-                        
-                    </div>
-                    <div>
-                        <label><input type="radio" name="sexo" value="Otros"> Otros</label>
-                        
-                    </div>
-                </div>
-
                 <div>
-                    <input id="boton-registrarme" type="submit" value="REGISTRARME">
+                    <input id="boton-login" type="submit" value="INGRESAR">
                 </div>
                 <div>
-                    <p>¿Ya tienes una cuenta? Haz <a href="/ingreso" style="color: red;">Click Aqui</a> para iniciar sesión</p>
+                    <p>¿No tienes una cuenta? Haz <a href="/registro" style="color: red;">Click Aqui</a> para Registrarte.</p>
                 </div>
             </form>
         </div>
