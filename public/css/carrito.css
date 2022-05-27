@@ -1,0 +1,117 @@
+.fondo{
+    background-color: #da7575;
+}
+.contenedor-carrito{
+    padding: 20px;
+    margin: 10px;
+    border-radius: 2px;
+    background-color: rgb(255, 207, 235);
+}
+.producto{
+    padding: 10px;
+    border: 1px solid gray;
+    text-align: left;
+    background: pink;
+    border-radius: 10px;
+}
+.finalizar-compra{
+    text-align: center;
+    margin-top: 5px;
+    border: solid 1px gray;
+    border-radius: 10px;
+    background: pink;
+    padding: 10px;
+}
+#boton-finalizar{
+    font-size: 20px;
+    padding: 5px;
+    border: 0;
+    border-radius: 10px;
+}
+#boton-finalizar:hover {
+    background: rgb(236, 151, 164);
+    border: 2px solid black;
+}
+.descripcion-producto {
+    display: flex;
+    border-bottom: 1px solid black;
+}
+.opciones-producto{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.opciones-productos p {
+    font-weight: bold; 
+    
+}
+.opciones-producto  a i{
+    color: black;
+    font-size: 25px;
+    width: 30%;
+    text-align: center;
+}
+.cantidad {
+    margin-top: 10px;
+    width: 30%;
+    padding: 5px;
+}
+.cantidad input {
+    width: 100%;
+    border-radius: 5px;
+}
+#producto-ejemplo{
+    width: 100px;
+    height: 100px;
+}
+.descripcion{
+    padding: 10px;
+}
+
+.valor{
+    font-weight: bold;
+}
+.subtotal{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+@media(min-width: 481px){
+    .productos-destacados-pc{
+        width: 60%;
+        margin: auto;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .producto {
+        display: flex;
+        justify-content: space-between;
+    }
+    .opciones-producto {
+        width: 30%;
+    }
+    .descripcion-producto {
+        width: 50%;
+        border: 0;
+    }
+    .productos-destacados-pc{
+        margin: 0;
+        width: 100%;
+    }
+    .art-producto{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+    }
+    .contenedor-carrito {
+        box-shadow: 5px 6px 5px 3px rgba(0, 0, 0, 0.27);
+        -webkit-box-shadow: 5px 6px 5px 3px rgba(0, 0, 0, 0.27);
+        -moz-box-shadow: 5px 6px 5px 3px rgba(0, 0, 0, 0.27);
+    }
+
+}
+
