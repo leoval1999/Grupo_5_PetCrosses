@@ -107,6 +107,11 @@
         flex-direction: column;
         width: 60%;
     }
+    .contenedor-carrito {
+        box-shadow: 5px 6px 5px 3px rgba(0, 0, 0, 0.27);
+        -webkit-box-shadow: 5px 6px 5px 3px rgba(0, 0, 0, 0.27);
+        -moz-box-shadow: 5px 6px 5px 3px rgba(0, 0, 0, 0.27);
+    }
 
 }
 

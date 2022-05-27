@@ -113,18 +113,18 @@ a {
 
 .itemCarrusel i {
     color: black;
+    font-size: 1em;
 }
 
 #contePuntos {
-
     display: flex;
-    justify-content: space-around
+    justify-content: center;
 }
 
 #contePuntos>a {
     font-size: 1em;
     color: black;
-
+    margin-right: 50px;
 }
 
 .itemCarrusel img {
@@ -376,6 +376,10 @@ a {
 
     }
 
+    .itemCarrusel i{
+        font-size: 2em;
+    }
+
     .centro-opcion {
         width: 50%;
 
@@ -480,6 +484,9 @@ a {
     .item-testimonio {
         width: 20%;
         height: 500px;
+        box-shadow: 5px 6px 5px 3px rgba(0, 0, 0, 0.27);
+        -webkit-box-shadow: 5px 6px 5px 3px rgba(0, 0, 0, 0.27);
+        -moz-box-shadow: 5px 6px 5px 3px rgba(0, 0, 0, 0.27);
     }
 
     #img-testimonio {
@@ -499,5 +506,10 @@ a {
     }
     .destacadas{
         margin-left: 10px   ;
+    }
+    .nosotros {
+        box-shadow: 5px 6px 5px 3px rgba(0, 0, 0, 0.27);
+        -webkit-box-shadow: 5px 6px 5px 3px rgba(0, 0, 0, 0.27);
+        -moz-box-shadow: 5px 6px 5px 3px rgba(0, 0, 0, 0.27);
     }
 }

@@ -101,10 +101,13 @@
 }
 @media (min-width: 768px) {
     .principal-detalle{
-        width: 50%;
+        width: 70%;
         margin: auto;
         margin-top: 20px;
         margin-bottom: 20px;
+        box-shadow: 5px 6px 5px 3px rgba(0, 0, 0, 0.27);
+        -webkit-box-shadow: 5px 6px 5px 3px rgba(0, 0, 0, 0.27);
+        -moz-box-shadow: 5px 6px 5px 3px rgba(0, 0, 0, 0.27);
     }
     .detalle-pc-1 {
         display: flex;
@@ -133,6 +136,7 @@
 
     #boton-cantidad{
         width: 80%;
+        font-size: 1.2em;
     }
 
     #boton-finalizar{
