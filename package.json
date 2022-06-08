@@ -19,8 +19,8 @@
   },
   "homepage": "https://github.com/leoval1999/Grupo_5_PetCrosses#readme",
   "dependencies": {
+    "ejs": "^3.1.8",
     "express": "^4.18.1",
     "nodemon": "^2.0.16"
-  },
-  "devDependencies": {}
+  }
 }
