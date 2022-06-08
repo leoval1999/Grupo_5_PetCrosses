@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const path = require("path")
 const publicPath = path.join(__dirname,"/public");
-const homeRoute = require("./routes/mainRoutes");
+const homeRoute = require("./src/routes/mainRoutes");
 const port = process.env.PORT || 3000;
 
 
