@@ -19,3 +19,4 @@ app.listen(port,(req,res)=>{
 
 //Vinculación EJS
 app.set('view engine','ejs');
+app.set('views', __dirname + '/src/views');

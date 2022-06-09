@@ -1,7 +1,7 @@
 const path = require('path');
 
 const homeController ={
-    inicio: (req,res)=>{ res.render('/products/home')},
+    inicio: (req,res)=>{ res.render('./products/home')},
     citas: (req,res)=>{res.render('./products/citas')},
     petshop: (req,res)=>{res.render('./products/petshop')},
     registro: (req,res)=>{res.render('./users/registro')},

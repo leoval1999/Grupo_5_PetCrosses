@@ -15,32 +15,7 @@
 </head>
 
 <body>
-    <header>
-
-        <div class="logo"><a href="/"><img id="logo" src="/img/logo2.jpeg" alt="Inicio"></a></div>
-        <div class=" nav ">
-            <div class="centro-opcion">
-                <a href="/citas">
-                    <h2 class="citas">Citas</h2>
-                </a>
-                <a href="/petshop">
-                    <h2 class="petshop">PetShop</h2>
-                </a>
-
-            </div>
-            <div class="items">
-                <nav class="navegacion">
-
-                    <div class="der-opcion">
-                        <a href="/buscador" class="buscador"><i class="fa-solid fa-magnifying-glass"></i></a>
-                        <a href="/registro" id="icono-registro"><i class="fa-solid fa-circle-user"></i></a>
-                        <a href="/carrito-compras" class="carrito"><i class="fa-solid fa-cart-shopping"></i></a>
-                    </div>
-                </nav>
-            </div>
-        </div>
-
-    </header>
+    <%- include('../partials/header') %>
     <section class="section-formulario">
         <div class="formulario">
             <form action="/registrar" method="POST">
@@ -88,28 +63,6 @@
             </form>
         </div>
     </section>
-    <footer class="pie-pagina">
-        <div class="logo-pie"><a href="/"><img id="logo-pie" src="/img/logo2.jpeg" alt="Inicio"></a></div>
-        <div class="contactenos">
-            <h4 class="titulo">CONTACTENOS</h4>
-            <p><i id="tf" class="fa-solid fa-phone"></i> (+54) 4456789</p>
-            <p><i id="mail" class="fa-solid fa-envelope"></i> correofalso@gmail.com</p>
-            <p><i id="ubi" class="fa-solid fa-location-dot"></i> Posadas-Misiones Calle Falsa 123</p>
-            <p>&copy; PetCrosses 2022</p>
-
-        </div>
-        <div class="redes-footer">
-            <div>
-                <h4 class="titulo">REDES</h4>
-            </div>
-            <div class="redes"> <a href="https://www.facebook.com/"><i id="fb"
-                        class="fa-brands fa-facebook-square">Facebook</i></a>
-                <a href="https://www.instagram.com/"> <i id="ig" class="fa-brands fa-instagram-square">Instagram</i></a>
-                <a href="https://twitter.com/"><i id="tw" class="fa-brands fa-twitter-square">Twitter</i></a>
-                <a href="https://www.whatsapp.com/?lang=es"><i id="wp"
-                        class="fa-brands fa-whatsapp-square">Whatsapp</i></a>
-            </div>
-
-        </div>
-
-    </footer>
+    <%- include('../partials/footer') %>
+</body>
+</html>
