@@ -1,5 +1,3 @@
-const path = require('path');
-
 const homeController ={
     inicio: (req,res)=>{ res.render('./products/home')},
     citas: (req,res)=>{res.render('./products/citas')},
@@ -7,6 +5,7 @@ const homeController ={
     registro: (req,res)=>{res.render('./users/registro')},
     ingreso: (req,res)=>{res.render('./users/ingreso')},
     carritoCompras: (req,res)=>{res.render('./products/carrito')},
-    detalle: (req,res)=>{res.render('./products/detalle')}
+    detalle: (req,res)=>{res.render('./products/detalle')},
+    editarProducto: (req,res)=>{res.render('./admin/editarProducto')}
 }
 module.exports = homeController;

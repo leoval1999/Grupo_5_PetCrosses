@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetCrosses</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/editarProducto.css">
+    <script src="https://kit.fontawesome.com/2e3686342e.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2e3686342e.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="body">
+    <%- include('../partials/header') %>
+    <h1 class="titulo-general"> ADMINISTRAR PRODUCTOS</h1>
+        <div class="contenedor-edicion">
+            <div class="crear-producto">
+                <h2 class="titulo-crear-producto">Crear producto</h2>
+                <form class="formulario"action="/producto-crear" method="POST">
+                    <div class="nombre-producto">
+                        <label for="producto">Producto:</label>
+                        <input type="text" name="producto" placeholder="Nombre del producto" required id="producto">
+                    </div>
+                    <div class="precio-producto">
+                        <label for="precio">Precio:</label>
+                        <input type="text" name="precio" placeholder="precio" required id="precio">
+                    </div>
+                    <div class="descripcion-producto">
+                        <label for="decripcion">Descripcion</label>
+                        <input type="text" name="descripcion" placeholder="Descripcion del producto" required id="nombre">
+                    </div>
+                    <div class="cantidad-producto">
+                        <label for="cantidad">Stock:</label>
+                        <input class="stock-producto" type="number" name="cantidad" placeholder="Stock"min = "0">
+                    </div>
+                    <div class="imagen-producto">
+                        <input type="file" name = "img" id="subir-img" accept=".jpg">
+                    </div>
+                    <div class="boton-crear">
+                        <input type="submit" >
+                    </div>
+                   
+                </form>
+            </div>
+            <div class="lista-productos">
+                <div class = "productos-creados">
+                    <p class="item-producto"><span>Nombre producto:</span> Collar</p>
+                    <p class="item-precio"><span>Precio:</span> $2500</p>
+                    <p class="item-cantidad"><span>Stock:</span> 10</p>
+                    <input type="submit" class="editar-producto" value="Editar">
+                    <input type="submit" class="eliminar-producto" value="Eliminar">
+                </div>
+                <div class = "productos-creados">
+                    <p class="item-producto"><span>Nombre producto:</span> Collar</p>
+                    <p class="item-precio"><span>Precio:</span> $2500</p>
+                    <p class="item-cantidad"><span>Stock:</span> 10</p>
+                    <input type="submit" class="editar-producto" value="Editar">
+                    <input type="submit" class="eliminar-producto" value="Eliminar">
+                </div>
+                <div class = "productos-creados">
+                    <p class="item-producto"><span>Nombre producto:</span> Collar</p>
+                    <p class="item-precio"><span>Precio:</span> $2500</p>
+                    <p class="item-cantidad"><span>Stock:</span> 10</p>
+                    <input type="submit" class="editar-producto" value="Editar">
+                    <input type="submit" class="eliminar-producto" value="Eliminar">
+                </div>
+                <div class = "productos-creados">
+                    <p class="item-producto"><span>Nombre producto:</span> Collar</p>
+                    <p class="item-precio"><span>Precio:</span> $2500</p>
+                    <p class="item-cantidad"><span>Stock:</span> 10</p>
+                    <input type="submit" class="editar-producto" value="Editar">
+                    <input type="submit" class="eliminar-producto" value="Eliminar">
+                </div>
+                <div class = "productos-creados">
+                    <p class="item-producto"><span>Nombre producto:</span> Collar</p>
+                    <p class="item-precio"><span>Precio:</span> $2500</p>
+                    <p class="item-cantidad"><span>Stock:</span> 10</p>
+                    <input type="submit" class="editar-producto" value="Editar">
+                    <input type="submit" class="eliminar-producto" value="Eliminar">
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

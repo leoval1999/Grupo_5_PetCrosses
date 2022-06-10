@@ -1,0 +1,102 @@
+.body{
+    background-color: white;
+}
+.titulo-general{
+    margin-top: 20px;
+    text-align: center;
+}
+.contenedor-edicion{
+    padding: 50px;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.crear-producto{
+ background: #DC8B8b;
+ border: 3px solid brown;
+ border-radius: 10px;
+ -webkit-box-shadow: -1px 1px 25px 8px rgba(0,0,0,0.62);
+-moz-box-shadow: -1px 1px 25px 8px rgba(0,0,0,0.62);
+box-shadow: -1px 1px 25px 8px rgba(0,0,0,0.62);
+}
+form {
+    padding: 20px;
+    margin: 20px;
+    background: #DC8B8b;
+}
+.lista-productos{
+    width:60%;
+    margin-left: 20px;
+    
+}
+form div {
+    padding: 10px 0px;
+}
+
+
+.titulo-crear-producto {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid brown;
+}
+div input {
+    border: 0;
+    padding: 10px 5px;
+    border-radius: 10px;  
+}
+
+div label{
+    display: inline-block;
+    width: 80px;
+}
+.boton-crear{
+    margin: auto;
+    text-align: center;
+}
+.boton-crear input{
+    width: 200px;
+    background-color: white;
+    color: rgb(255, 80, 109);
+}
+
+.boton-crear input:hover{
+    cursor:pointer;
+    border: solid 1px black;
+    color: white;
+    background-color: rgb(255, 80, 109);
+}
+.productos-creados{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: solid 2px black;
+    background: #DC8B8b;
+    border-radius: 10px;
+    margin: 10px 0px;
+    padding: 20px;
+    -webkit-box-shadow: 12px 13px 9px -6px rgba(0,0,0,0.55);
+-moz-box-shadow: 12px 13px 9px -6px rgba(0,0,0,0.55);
+box-shadow: 12px 13px 9px -6px rgba(0,0,0,0.55);
+}
+.editar-producto{
+    background-color:green;
+    color: white;
+    cursor: pointer;
+}
+.eliminar-producto{
+    background-color: rgb(255, 0, 0);
+    color: white;
+    cursor: pointer;
+}
+div p span {
+    font-weight: bold;
+}
+
+#subir-img{
+    cursor: pointer;
+}

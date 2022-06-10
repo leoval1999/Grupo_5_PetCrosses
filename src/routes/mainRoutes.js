@@ -9,5 +9,5 @@ routes.get("/registro",homeRoute.registro);
 routes.get("/ingreso",homeRoute.ingreso);
 routes.get("/carrito-compras",homeRoute.carritoCompras);
 routes.get("/detalle",homeRoute.detalle);
-
+routes.get("/editar-producto",homeRoute.editarProducto);
 module.exports = routes;
