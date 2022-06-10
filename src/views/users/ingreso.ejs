@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetCrosses</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/registro.css">
+    <script src="https://kit.fontawesome.com/2e3686342e.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2e3686342e.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <%- include('../partials/header') %>
+    <section class="section-formulario">
+        <div class="formulario">
+            <form action="/ingresar" method="POST">
+                <h4 id="subtitulo">INICIAR SESIÓN</h4>
+                <div class="input">
+                    <input type="email" name="correo" placeholder=" Correo electrónico" required id="Correo">
+                </div>
+                <div class="input">
+                    <input type="password" name="contraseña" placeholder=" Contraseña" required id="contraseña">
+                </div>
+                <div class="recordar-cuenta">
+                    <label><input type="radio" name="recordar" value="contrar"> Recordar</label>
+                </div>
+                <div class="recuperar-pass">
+                    <p>¿Olvidaste tu contraseña? Haz <a href="/recuperar-cuenta" style="color: red;">Click Aqui</a> para recuperarla.</p>
+                </div>
+                <div>
+                    <input id="boton-login" type="submit" value="INICIAR SESIÓN">
+                </div>
+            </form>
+            <div class="padre-boton-crear-cuenta">
+                <a href="/registro" id="boton-crear-cuenta">Crear cuenta</a>
+            </div>
+        </div>
+    </section>
+    <%- include('../partials/footer') %>
+</body>
+</html>
