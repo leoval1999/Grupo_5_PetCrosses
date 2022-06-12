@@ -1,0 +1,66 @@
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.titulo-central {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.opcion {
+    padding: 20px;
+}
+
+#imagen-perritos {
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.nombre-mascota {
+    text-align: center;
+    margin-bottom: 10px;
+    font-style: italic;
+    font-weight: bold;
+
+}
+
+.descripcion-perros {
+    font-weight: bold;
+    text-align: center;
+}
+
+.contenedor-match {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.si {
+    border: solid 1px black;
+    background-color: green;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.no {
+    border: solid 1px black;
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}

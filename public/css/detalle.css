@@ -1,5 +1,8 @@
 * {
- font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 .principal-detalle {
     border: 1px solid black;
@@ -59,15 +62,21 @@
     border: 0;
     border-radius: 5px;
 }
+
+.padre-botones{
+    border: solid 5px red;
+}
 .padre-boton-finalizar {
-    width: 100%;
+    width: 50%;
     display: flex;
     justify-content: center;
+}
+.boton-editar{
+    margin-left: 10px;
 }
 #boton-finalizar{
     color: black;
     text-align: center;
-    width: 40%;
     font-size: 14px;
     border: solid 1px gray;
     border-radius: 5px;
@@ -77,7 +86,7 @@
     margin-bottom: 5px;
 }
 .precio-anterior{
-    text-decoration:line-through;
+   
     border: solid 1px black;
 
     width: 100px;
@@ -85,6 +94,10 @@
     text-align: center;
     font-size: 10px;
     
+}
+.precio-anterior span{
+    text-decoration:line-through;
+    font-weight: bold;
 }
 #descripcion{
     margin: 10px;
@@ -128,19 +141,25 @@
         display: flex;
         justify-content: space-between;
     }
+    .padre-botones{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
     .botones-adquirir {
-        width: 30%;
         margin-right: 20px;
         margin-top: 30px;
     }
 
     #boton-cantidad{
-        width: 80%;
+
+        height: 35px;
+        width: 50%;
+        border-radius: 5px;
         font-size: 1.2em;
     }
 
     #boton-finalizar{
-        width: 70%;
         font-weight: bold;
         padding: 10px;
         border-radius: 15px;

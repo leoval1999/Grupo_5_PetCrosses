@@ -14,114 +14,198 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 </head>
 
-<body class = "body">
+<body class="body">
     <%- include('../partials/header') %>
-<section>
-    <div id="conteItemsCarrusel">
-        <div class="itemCarrusel" id="itemCarrusel-1">
-            <div class="tarjetaCarrusel" id="tarjetaCarrusel-1"><img src="/img/fondo.jpg" alt="item-1-carrusel">
-            </div>
-            <div class="flechasCarrusel">
-                <a href="#itemCarrusel-3"> <i><i class="fa-solid fa-circle-chevron-left"></i></i></a>
-                <a href="#itemCarrusel-2"><i><i class="fa-solid fa-circle-chevron-right"></i></i> </a>
-            </div>
-        </div>
+        <section>
+            <div id="conteItemsCarrusel">
+                <div class="itemCarrusel" id="itemCarrusel-1">
+                    <div class="tarjetaCarrusel" id="tarjetaCarrusel-1"><img src="/img/fondo.jpg" alt="item-1-carrusel">
+                    </div>
+                    <div class="flechasCarrusel">
+                        <a href="#itemCarrusel-3"> <i><i class="fa-solid fa-circle-chevron-left"></i></i></a>
+                        <a href="#itemCarrusel-2"><i><i class="fa-solid fa-circle-chevron-right"></i></i> </a>
+                    </div>
+                </div>
 
-        <div class="itemCarrusel" id="itemCarrusel-2">
-            <div class="tarjetaCarrusel" id="tarjetaCarrusel-2"><img src="/img/puppy.jpg" alt="item-2-carrusel">
-            </div>
-            <div class="flechasCarrusel">
-                <a href="#itemCarrusel-1"> <i><i class="fa-solid fa-circle-chevron-left"></i></i></a>
-                <a href="#itemCarrusel-3"><i><i class="fa-solid fa-circle-chevron-right"></i></i> </a>
-            </div>
+                <div class="itemCarrusel" id="itemCarrusel-2">
+                    <div class="tarjetaCarrusel" id="tarjetaCarrusel-2"><img src="/img/puppy.jpg" alt="item-2-carrusel">
+                    </div>
+                    <div class="flechasCarrusel">
+                        <a href="#itemCarrusel-1"> <i><i class="fa-solid fa-circle-chevron-left"></i></i></a>
+                        <a href="#itemCarrusel-3"><i><i class="fa-solid fa-circle-chevron-right"></i></i> </a>
+                    </div>
 
-        </div>
+                </div>
 
-        <div class="itemCarrusel" id="itemCarrusel-3">
-            <div class="tarjetaCarrusel" id="tarjetaCarrusel-3"><img src="/img/rottweiler.jpg"
-                    alt="item-3-carrusel">
-            </div>
-            <div class="flechasCarrusel">
-                <a href="#itemCarrusel-2"> <i><i class="fa-solid fa-circle-chevron-left"></i></i></a>
-                <a href="#itemCarrusel-1"><i><i class="fa-solid fa-circle-chevron-right"></i></i> </a>
-            </div>
+                <div class="itemCarrusel" id="itemCarrusel-3">
+                    <div class="tarjetaCarrusel" id="tarjetaCarrusel-3"><img src="/img/rottweiler.jpg"
+                            alt="item-3-carrusel">
+                    </div>
+                    <div class="flechasCarrusel">
+                        <a href="#itemCarrusel-2"> <i><i class="fa-solid fa-circle-chevron-left"></i></i></a>
+                        <a href="#itemCarrusel-1"><i><i class="fa-solid fa-circle-chevron-right"></i></i> </a>
+                    </div>
 
-        </div>
-    </div>
-    <div id="contePuntos">
-        <a href="#itemCarrusel-1"><i class="fa-solid fa-circle"></i> </a>
-        <a href="#itemCarrusel-2"><i class="fa-solid fa-circle"></i> </a>
-        <a href="#itemCarrusel-3"><i class="fa-solid fa-circle"></i> </a>
-    </div>
-</section>
-<section class="productos-destacados">
-    <h2 class="titulo-productos">PRODUCTOS DESTACADOS</h2>
-    <div class="productos-destacados-pc">
-        <article class="art-producto">
-            <h4 class="titulo-articulo"><a href="/detalle">Collar Antipulgas</a></h4>
-            <a href="/detalle"><img id="destacado-1" src="/img/collar-anti.jpg" alt="collar anti pulgas"></a>
-            <div class="descripciones">
-                <p> Para perros de más de 8kg</p>
+                </div>
             </div>
-            <div class="padre-precio">
-                <p class="precio">$999</p>
+            <div id="contePuntos">
+                <a href="#itemCarrusel-1"><i class="fa-solid fa-circle"></i> </a>
+                <a href="#itemCarrusel-2"><i class="fa-solid fa-circle"></i> </a>
+                <a href="#itemCarrusel-3"><i class="fa-solid fa-circle"></i> </a>
             </div>
+        </section>
+        
 
-        </article>
-        <article class="art-producto">
-            <h4 class="titulo-articulo"><a href="/detalle">Collar</a></h4>
-            <a href="/detalle"><img id="destacado-2" src="/img/collar.webp" alt="collar"></a>
-            <div class="descripciones">
-                <p>Collar 25mm ancho</p>
-            </div>
-            <div class="padre-precio">
-                <p class="precio">$449</p>
-            </div>
+        <main class="citas">
 
-        </article>
-        <article class="art-producto">
-            <h4 class="titulo-articulo"><a href="/detalle">Juguete para Perro</a></h4>
-            <a href="/detalle"><img id="destacado-3" src="/img/jueguete-perro.jpg" alt="juguete perro"></a>
-            <div class="descripciones">
-                <p>Hueso de goma ajedrez</p>
-            </div>
-            <div class="padre-precio">
-                <p class="precio">$519</p>
-            </div>
+            <nav class="navegacion-citas">
 
-        </article>
-        <article class="art-producto">
-            <h4 class="titulo-articulo"><a href="/detalle">Correa</a></h4>
-            <a href="/detalle"><img id="destacado-4" src="/img/correa.webp" alt="correa"></a>
-            <div class="descripciones">
-                <p>Correa regulable</p>
-            </div>
-            <div class="padre-precio">
-                <p class="precio">$499</p>
-            </div>
+                <h1 class="titulo-central">ENCONTRA LA PAREJA IDEAL</h1>
+                <div class="opcion">
+                    <!-- Perro 1 -->
+                    <p class="nombre-mascota">Firulais</p>
+                    <div class="imagen-perritos">
+                        <img id="imagen-perritos" src="/img/golden-retriever-1.jpg" alt="">
+                    </div>
+                    
+                    
+                    
 
-        </article>
-        <article class="art-producto">
-            <h4 class="titulo-articulo"><a href="/detalle">Plato Agua-Comida</a></h4>
-            <a href="/detalle"><img id="destacado-5" src="/img/plato-perro.jpg" alt="plato perro"></a>
-            <div class="descripciones">
-                <p>Con divisoria para alimento y Agua</p>
-            </div>
-            <div class="padre-precio">
-                <p class="precio">$299</p>
-            </div>
-        </article>
-    </div>
-</section>
+                    <p class="descripcion-perros">
+                        Soy un Golden retriever tengo 24 meses,muy amigable con los demas perros
+                        vivo en la ciudad de posadas misiones,mis dueños tienen todas mis vacunas al dia.
+                    </p>
+                    <div class="contenedor-match">
+                        <div class = "si">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <div class="no">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
 
-<main class="citas">
-    <nav class="navegacion-citas">
-        <div class = "opcion"></div>
-        <div class = "opcion"></div>
-        <div class = "opcion"></div>
-        <div class = "opcion"></div>
-    </nav>
-</main>
-<%- include('../partials/footer') %>
+                <div class="opcion">
+                    <!--perro 2-->
+                    <p class="nombre-mascota">Preto</p>
+                    <img id="imagen-perritos" src="/img/golden-retriever-1.jpg" alt="">
+                    <p class="descripcion-perros">
+                        Soy un Golden retriever tengo 24 meses,muy amigable con los demas perros
+                        vivo en la ciudad de posadas misiones,mis dueños tienen todas mis vacunas al dia.
+                    </p>
+                    <div class="contenedor-match">
+                        <div class = "si">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <div class="no">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                <div class="opcion">
+                    <!--perro 3-->
+                    <p class="nombre-mascota">Ema</p>
+                    <img id="imagen-perritos" src="/img/golden-retriever-1.jpg" alt="">
+                    <p class="descripcion-perros">
+                        Soy un Golden retriever tengo 24 meses,muy amigable con los demas perros
+                        vivo en la ciudad de posadas misiones,mis dueños tienen todas mis vacunas al dia.
+                    </p>
+                    <div class="contenedor-match">
+                        <div class = "si">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <div class="no">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                <div class="opcion">
+                    <!--perro 4 -->
+                    <p class="nombre-mascota">Afrika</p>
+                    <img id="imagen-perritos" src="/img/golden-retriever-1.jpg" alt="">
+                    <p class="descripcion-perros">
+                        Soy un Golden retriever tengo 24 meses,muy amigable con los demas perros.
+                        Vivo en la ciudad de Posadas Misiones,mis dueños tienen todas mis vacunas al dia.
+                    </p>
+                    <div class="contenedor-match">
+                        <div class = "si">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <div class="no">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </nav>
+        </main>
+        <section class="productos-destacados">
+            <h2 class="titulo-productos">PRODUCTOS DESTACADOS</h2>
+            <div class="productos-destacados-pc">
+                <article class="art-producto">
+                    <h4 class="titulo-articulo"><a href="/detalle">Collar Antipulgas</a></h4>
+                    <a href="/detalle"><img id="destacado-1" src="/img/collar-anti.jpg" alt="collar anti pulgas"></a>
+                    <div class="descripciones">
+                        <p> Para perros de más de 8kg</p>
+                    </div>
+                    <div class="padre-precio">
+                        <p class="precio">$999</p>
+                    </div>
+
+                </article>
+                <article class="art-producto">
+                    <h4 class="titulo-articulo"><a href="/detalle">Collar</a></h4>
+                    <a href="/detalle"><img id="destacado-2" src="/img/collar.webp" alt="collar"></a>
+                    <div class="descripciones">
+                        <p>Collar 25mm ancho</p>
+                    </div>
+                    <div class="padre-precio">
+                        <p class="precio">$449</p>
+                    </div>
+
+                </article>
+                <article class="art-producto">
+                    <h4 class="titulo-articulo"><a href="/detalle">Juguete para Perro</a></h4>
+                    <a href="/detalle"><img id="destacado-3" src="/img/jueguete-perro.jpg" alt="juguete perro"></a>
+                    <div class="descripciones">
+                        <p>Hueso de goma ajedrez</p>
+                    </div>
+                    <div class="padre-precio">
+                        <p class="precio">$519</p>
+                    </div>
+
+                </article>
+                <article class="art-producto">
+                    <h4 class="titulo-articulo"><a href="/detalle">Correa</a></h4>
+                    <a href="/detalle"><img id="destacado-4" src="/img/correa.webp" alt="correa"></a>
+                    <div class="descripciones">
+                        <p>Correa regulable</p>
+                    </div>
+                    <div class="padre-precio">
+                        <p class="precio">$499</p>
+                    </div>
+
+                </article>
+                <article class="art-producto">
+                    <h4 class="titulo-articulo"><a href="/detalle">Plato Agua-Comida</a></h4>
+                    <a href="/detalle"><img id="destacado-5" src="/img/plato-perro.jpg" alt="plato perro"></a>
+                    <div class="descripciones">
+                        <p>Con divisoria para alimento y Agua</p>
+                    </div>
+                    <div class="padre-precio">
+                        <p class="precio">$299</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <%- include('../partials/footer') %>
 </body>
+
 </html>
