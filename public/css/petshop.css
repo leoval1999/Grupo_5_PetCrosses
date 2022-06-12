@@ -1,0 +1,40 @@
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #dd8e8e;
+
+}
+.contenedor-petshop{
+    padding: 20px;
+}
+.contenedor-producto{
+    background-color: #fff;
+    border: solid 2px gray;
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.precio-petshop{
+    margin-top: 10px;
+    text-align: center;
+    border: solid 2px grey;
+    border-radius: 5px;
+}
+p{
+    font-weight: bold;
+
+}
+#imagen-producto{
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: auto;
+    
+}
