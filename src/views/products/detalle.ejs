@@ -42,9 +42,13 @@
         <section class="detalle-titulo">
             <h4 class="titulo-producto">Collar Anti-pulgas Seresto</h4>
             <p class="stock">Stock disponible: 5</p>
-            <p class="precio-anterior"> PRECIO ANTERIOR: $2000</p>
+            <p class="precio-anterior"> PRECIO ANTERIOR: <span>$2000</span></p>
             <h4 class="precio-actual">Precio: $1500</h4>
             <p class="cuotas">Cuotas: en 12 x $208,33</p>
+            <div class="cantidad">
+                <p>Cantidad</p>
+                <input  id = "boton-cantidad" type="number" name="cantidad" >
+            </div>
         </section>
     </div>
     <div class="detalle-pc-2">
@@ -56,16 +60,20 @@
                 Inoloro <br>
 
             </p>
+
+            
         </section>
         <section class="botones-adquirir">
             <div class="opciones-producto">
-                <div class="cantidad">
-                    <p>Cantidad</p>
-                    <input  id = "boton-cantidad" type="number" name="cantidad">
-                </div>
-                <div>
+                
+                <div class="padre-botones">
+                    
+                    <div class="padre-boton-editar">
+                        <a href="/editar-producto" ><input class="boton-editar" id="boton-finalizar" type="submit" value="Editar"></a>
+                    </div>
+                    
                     <div class="padre-boton-finalizar">
-                        <a href="/carrito-compras" id="boton-finalizar">Agregar al carrito</a>
+                        <a href="/carrito-compras" ><input id="boton-finalizar" type="submit" value="Agregar al carrito"></a>
                     </div>
                     
                 </div>
