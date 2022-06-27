@@ -63,16 +63,14 @@
     border-radius: 5px;
 }
 
-.padre-botones{
-    border: solid 5px red;
-}
+
 .padre-boton-finalizar {
     width: 50%;
     display: flex;
     justify-content: center;
 }
 .boton-editar{
-    margin-left: 10px;
+    margin-right: 10px;
 }
 #boton-finalizar{
     color: black;
