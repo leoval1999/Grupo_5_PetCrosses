@@ -1,30 +1,21 @@
-[{"id":1,"name":"Panchito Draye","email":"pdraye0@php.net","password":"nsGOItRE","avatar":"user_1.jpg"},
-{"id":2,"name":"Bucky Alcott","email":"balcott1@biglobe.ne.jp","password":"8LPEs8tOYV","avatar":"user_2.jpg"},
-{"id":3,"name":"Patrizio Gebbe","email":"pgebbe2@hugedomains.com","password":"WBsq4P","avatar":"user_3.jpg"},
-{"id":4,"name":"Johannes Bowmer","email":"jbowmer3@timesonline.co.uk","password":"QNOpzhcPF51C","avatar":"user_4.jpg"},
-{"id":5,"name":"Dimitry Hardman","email":"dhardman4@noaa.gov","password":"4bRMsINQmI","avatar":"user_5.jpg"},
-{"id":6,"name":"Celine Hallahan","email":"challahan5@va.gov","password":"w6kMGAsbmL8","avatar":"user_6.jpg"},
-{"id":7,"name":"Shayne Fitzackerley","email":"sfitzackerley6@springer.com","password":"dlp3cJFtDQIy","avatar":"user_7.jpg"},
-{"id":8,"name":"Clareta Limpkin","email":"climpkin7@360.cn","password":"y4OBz1kmazo","avatar":"user_8.jpg"},
-{"id":9,"name":"Sheree Lilywhite","email":"slilywhite8@usgs.gov","password":"VvigfPQGqBk","avatar":"user_9.jpg"},
-{"id":10,"name":"Bogey Romao","email":"bromao9@diigo.com","password":"fFi2vzsLrU","avatar":"user_10.jpg"},
-{"id":11,"name":"Appolonia Carnalan","email":"acarnalana@wix.com","password":"6qcsea3Xzh","avatar":"user_11.jpg"},
-{"id":12,"name":"Carlos Gethin","email":"cgethinb@myspace.com","password":"c3TV4HxFvINi","avatar":"user_12.jpg"},
-{"id":13,"name":"Elwin Whitehall","email":"ewhitehallc@ow.ly","password":"vXaSj39cQ","avatar":"user_13.jpg"},
-{"id":14,"name":"Reggy Klishin","email":"rklishind@seattletimes.com","password":"iR7Nwfo","avatar":"user_14.jpg"},
-{"id":15,"name":"Orran Farryn","email":"ofarryne@jalbum.net","password":"IatoZkvJ","avatar":"user_15.jpg"},
-{"id":16,"name":"Farrand Buddles","email":"fbuddlesf@ftc.gov","password":"Q53BrKMuIf","avatar":"user_16.jpg"},
-{"id":17,"name":"Cullin Willmott","email":"cwillmottg@go.com","password":"5LbV2k","avatar":"user_17.jpg"},
-{"id":18,"name":"Corenda Raggitt","email":"craggitth@biglobe.ne.jp","password":"1STSH3K07","avatar":"user_18.jpg"},
-{"id":19,"name":"Edmund Shepherdson","email":"eshepherdsoni@oracle.com","password":"l8BLL9jf","avatar":"user_19.jpg"},
-{"id":20,"name":"Crosby Martinon","email":"cmartinonj@washingtonpost.com","password":"WUdd6g","avatar":"user_20.jpg"},
-{"id":21,"name":"Olivia Imort","email":"oimortk@123-reg.co.uk","password":"JmMvxxn5","avatar":"user_21.jpg"},
-{"id":22,"name":"Merrielle Ablott","email":"mablottl@yahoo.com","password":"7vv7D6","avatar":"user_22.jpg"},
-{"id":23,"name":"Bryant Garrity","email":"bgarritym@phoca.cz","password":"niNN7Mme","avatar":"user_23.jpg"},
-{"id":24,"name":"Alie Riggeard","email":"ariggeardn@ask.com","password":"F9Vsg1e3Fs9c","avatar":"user_24.jpg"},
-{"id":25,"name":"Ana Fonso","email":"afonsoo@flavors.me","password":"EMdHihP","avatar":"user_25.jpg"},
-{"id":26,"name":"Lilla Matuschek","email":"lmatuschekp@devhub.com","password":"p0ESoufp","avatar":"user_26.jpg"},
-{"id":27,"name":"Simone Stanborough","email":"sstanboroughq@google.cn","password":"T66itb","avatar":"user_27.jpg"},
-{"id":28,"name":"Tymon Rubenov","email":"trubenovr@psu.edu","password":"iJi8sAJv7","avatar":"user_28.jpg"},
-{"id":29,"name":"Merv Piccard","email":"mpiccards@woothemes.com","password":"ZJTSjpN8Vnlb","avatar":"user_29.jpg"},
-{"id":30,"name":"Zandra Cottie","email":"zcottiet@uol.com.br","password":"3SkURB","avatar":"user_30.jpg"}]
+[
+    {
+        "id": 1,
+        "name": "Panchito Draye",
+        "email": "pdraye0@php.net",
+        "password": "nsGOItRE",
+        "avatar": "user_1.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "seba",
+        "apellido": "Maidana",
+        "correo": "sebastian.angel.maidan@gmail.com",
+        "contraseña": [
+            "asdasd",
+            "asdasdasd"
+        ],
+        "fechaNacimiento": "222222-12-12",
+        "sexo": "Hombre"
+    }
+]

@@ -1,18 +1,18 @@
 [
     {
         "id": 1,
-        "producto": "Parlante",
+        "producto": "peluche",
         "precio": "1000",
-        "descripcion": "Parlante soundrround",
-        "cantidad": "6",
-        "img": "adventure time nice road.jpg"
+        "descripcion": "peluche para perros",
+        "cantidad": "9",
+        "img": "adventure time crystal apple.jpg"
     },
     {
         "id": 2,
-        "producto": "Collar",
-        "precio": "2500",
-        "descripcion": "Collar anti pulgas especial para perros de mas de ocho meses",
-        "cantidad": "9",
-        "img": "adventure time donus.jpg"
+        "producto": "Cuerda",
+        "precio": "1000",
+        "descripcion": "Cuerda para perros",
+        "cantidad": "6",
+        "img": "adventure time ice mountain.jpg"
     }
 ]

@@ -9,9 +9,14 @@ routes.get("/registro",homeRoute.registro);
 routes.get("/ingreso",homeRoute.ingreso);
 routes.get("/carrito-compras",homeRoute.carritoCompras);
 routes.get("/detalle",homeRoute.detalle);
+//productos
 routes.get("/products",homeRoute.products);
 routes.post("/products/crear-producto", homeRoute.crearProducto),
 routes.delete("/products/eliminar-producto/:id", homeRoute.eliminarProducto);
 routes.get("/products/edit-producto/:id", homeRoute.modoEditarProducto)
 routes.put("/products/editar-producto/:id", homeRoute.editarProducto);
+//usuarios
+routes.post("/ingresar", homeRoute.ingresar);
+routes.post("/registrar", homeRoute.registrar);
+
 module.exports = routes;  
