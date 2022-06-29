@@ -9,5 +9,9 @@ routes.get("/registro",homeRoute.registro);
 routes.get("/ingreso",homeRoute.ingreso);
 routes.get("/carrito-compras",homeRoute.carritoCompras);
 routes.get("/detalle",homeRoute.detalle);
-routes.get("/editar-producto",homeRoute.editarProducto);
-module.exports = routes;
+routes.get("/products",homeRoute.products);
+routes.post("/products/crear-producto", homeRoute.crearProducto),
+routes.delete("/products/eliminar-producto/:id", homeRoute.eliminarProducto);
+routes.get("/products/edit-producto/:id", homeRoute.modoEditarProducto)
+routes.put("/products/editar-producto/:id", homeRoute.editarProducto);
+module.exports = routes;  
