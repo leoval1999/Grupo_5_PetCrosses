@@ -1,10 +1,14 @@
 const express = require("express");
 const app = express();
-const path = require("path")
+const path = require("path");
+const methodOverride = require('method-override');
+app.use(methodOverride('_method'));
 const publicPath = path.join(__dirname,"/public");
 const homeRoute = require("./src/routes/mainRoutes");
 const port = process.env.PORT || 3000;
 
+app.use(express.urlencoded({ extended: false}));
+app.use(express.json());
 
 
 //routes

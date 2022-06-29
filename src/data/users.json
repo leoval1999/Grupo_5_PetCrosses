@@ -1,0 +1,21 @@
+[
+    {
+        "id": 1,
+        "name": "Panchito Draye",
+        "email": "pdraye0@php.net",
+        "password": "nsGOItRE",
+        "avatar": "user_1.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "seba",
+        "apellido": "Maidana",
+        "correo": "sebastian.angel.maidan@gmail.com",
+        "contraseña": [
+            "asdasd",
+            "asdasdasd"
+        ],
+        "fechaNacimiento": "222222-12-12",
+        "sexo": "Hombre"
+    }
+]

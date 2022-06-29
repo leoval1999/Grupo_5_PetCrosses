@@ -21,7 +21,7 @@
         <div class="contenedor-edicion">
             <div class="crear-producto">
                 <h2 class="titulo-crear-producto">Crear producto</h2>
-                <form class="formulario"action="/producto-crear" method="POST">
+                <form class="formulario"action="/products/crear-producto" method="POST">
                     <div class="nombre-producto">
                         <label for="producto">Producto:</label>
                         <input type="text" name="producto" placeholder="Nombre del producto" required id="producto">
@@ -48,40 +48,20 @@
                 </form>
             </div>
             <div class="lista-productos">
-                <div class = "productos-creados">
-                    <p class="item-producto"><span>Producto:</span> Collar</p>
-                    <p class="item-precio"><span>Precio:</span> $2500</p>
-                    <p class="item-cantidad"><span>Stock:</span> 10</p>
-                    <input type="submit" class="editar-producto" value="Editar">
-                    <input type="submit" class="eliminar-producto" value="Eliminar">
-                </div>
-                <div class = "productos-creados">
-                    <p class="item-producto"><span>Producto:</span> Collar</p>
-                    <p class="item-precio"><span>Precio:</span> $2500</p>
-                    <p class="item-cantidad"><span>Stock:</span> 10</p>
-                    <input type="submit" class="editar-producto" value="Editar">
-                    <input type="submit" class="eliminar-producto" value="Eliminar">
-                </div>
-                <div class = "productos-creados">
-                    <p class="item-producto"><span>Producto:</span> Collar</p>
-                    <p class="item-precio"><span>Precio:</span> $2500</p>
-                    <p class="item-cantidad"><span>Stock:</span> 10</p>
-                    <input type="submit" class="editar-producto" value="Editar">
-                    <input type="submit" class="eliminar-producto" value="Eliminar">
-                </div>
-                <div class = "productos-creados">
-                    <p class="item-producto"><span>Producto:</span> Collar</p>
-                    <p class="item-precio"><span>Precio:</span> $2500</p>
-                    <p class="item-cantidad"><span>Stock:</span> 10</p>
-                    <input type="submit" class="editar-producto" value="Editar">
-                    <input type="submit" class="eliminar-producto" value="Eliminar">
-                </div>
-                <div class = "productos-creados">
-                    <p class="item-producto"><span>Producto:</span> Collar</p>
-                    <p class="item-precio"><span>Precio:</span> $2500</p>
-                    <p class="item-cantidad"><span>Stock:</span> 10</p>
-                    <input type="submit" class="editar-producto" value="Editar">
-                    <input type="submit" class="eliminar-producto" value="Eliminar">
+                <% for(let i = 0; i < productos.length; i++) {%>
+                    <div class = "productos-creados">
+                        <p class="item-producto"><span>Producto:</span><%= productos[i].producto%></p>
+                        <p class="item-precio"><span>Precio:</span> <%= productos[i].precio%></p>
+                        <p class="item-cantidad"><span>Stock:</span> <%= productos[i].cantidad%></p>
+                        <form action="/products/edit-producto/<%= productos[i].id%>" method="GET">
+                        <input type="submit" class="editar-producto" value="Editar">
+                        </form>
+                        <form action="/products/eliminar-producto/<%= productos[i].id%>?_method=DELETE" method="POST">
+                        <input type="submit" class="eliminar-producto" value="Eliminar">
+                        </form>
+                        </div> 
+                <% }%>
+                
                 </div>
             </div>
         </div>

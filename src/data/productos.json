@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "producto": "peluche",
+        "precio": "1000",
+        "descripcion": "peluche para perros",
+        "cantidad": "9",
+        "img": "adventure time crystal apple.jpg"
+    },
+    {
+        "id": 2,
+        "producto": "Cuerda",
+        "precio": "1000",
+        "descripcion": "Cuerda para perros",
+        "cantidad": "6",
+        "img": "adventure time ice mountain.jpg"
+    }
+]
