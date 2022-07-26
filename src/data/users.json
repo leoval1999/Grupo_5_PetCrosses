@@ -17,5 +17,16 @@
         ],
         "fechaNacimiento": "222222-12-12",
         "sexo": "Hombre"
+    },
+    {
+        "id": 3,
+        "nombre": "",
+        "apellido": "",
+        "correo": "",
+        "contrasenia": [
+            "",
+            ""
+        ],
+        "fechaNacimiento": ""
     }
 ]

@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 let productos = require('./../data/productos.json');
 let users = require('./../data/users.json');
+const {validationResult} = require('express-validator');
 
 const homeController ={
     inicio: (req,res)=>{ res.render('./products/home')},
@@ -72,6 +73,7 @@ const homeController ={
 
 
     },
+    
     registrar: (req, res) => {
         const newId = users[(users.length - 1)].id + 1;
         let usuarioCreado = {
@@ -79,19 +81,32 @@ const homeController ={
             nombre: req.body.nombre,
             apellido: req.body.apellido,
             correo:req.body.correo,
-            contraseña:req.body.contraseña,
+            contrasenia:req.body.contrasenia,
             fechaNacimiento: req.body.fechaNacimiento,
-            sexo: req.body.sexo
+            sexo: req.body.sexo,
+            imagenPerfil: req.body.imagenPerfil
         }
-        users.push(usuarioCreado);
-        fs.writeFileSync(
-            path.join(__dirname, "../data/users.json"),
-            JSON.stringify(users, null, 4),
-            {
-                encoding: "utf-8",
-            }
-        )
-        res.redirect("/");
+            users.push(usuarioCreado);
+            fs.writeFileSync(
+                path.join(__dirname, "../data/users.json"),
+                JSON.stringify(users, null, 4),
+                {
+                    encoding: "utf-8",
+                }
+            )
+        
+       
+
+        const resultadoValidaciones = validationResult(req);
+        console.log(resultadoValidaciones)
+        if(resultadoValidaciones.errors.length > 0){
+            return res.render('./users/registro',{
+                errors: resultadoValidaciones.mapped(),
+                oldData: req.body
+            });    
+        }
+
+        return res.send('Ok, las validaciones se pasaron y no tienes errores');
     },
     ingresar: (req, res) => {
        res.redirect("/");

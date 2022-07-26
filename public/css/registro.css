@@ -21,6 +21,9 @@
     box-shadow: 11px 17px 11px -1px rgba(247,99,247,0.59);
 }
 
+.error {
+    color:red
+}
 #subtitulo {
     font-size: 2em;
     margin: 20px 0px;
