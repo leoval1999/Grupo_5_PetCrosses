@@ -1,0 +1,34 @@
+#imagenUsuario{
+    width: 200px;
+    height: 200px;
+}
+.perfilUsuario{
+    border: solid 2px black;
+    width: 50%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+ul{
+    list-style: none;
+}
+
+
+.cerrar-sesion{
+    text-align: center;
+}
+
+.cerrar-sesion a {
+    color: black;
+}
+
+.cerrar-sesion i {
+    font-size: 50px;
+}
+
+.cerrar-sesion h2{
+    width: 100%;
+    font-size: 20px;
+}

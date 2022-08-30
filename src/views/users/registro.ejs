@@ -17,41 +17,96 @@
 <body>
     <%- include('../partials/header') %>
     <section class="section-formulario">
+
+        
+
         <div class="formulario">
-            <form action="/registrar" method="POST">
+            <form action="/registrar" method="POST" enctype="multipart/form-data">
                 <h4 id="subtitulo">REGISTRATE</h4>
                 <div class="nombre-apellido">
-                    <input type="text" name="nombre" placeholder=" Indique su nombre" required id="Nombre">
-                    <input type="text" name="apellido" placeholder=" Indique su apellido" required id="Apellido"> 
+                    
+                    <input type="text" name="nombre" placeholder=" Indique su nombre"  id="Nombre" value="<%= locals.oldData ? oldData.nombre : null %>" >
+
+                    
+                        <% if (locals.errors && errors.nombre){ %>
+                            <div class="error">
+                                <%= errors.nombre.msg %>
+                            </div>
+                    
+                            <% } %>
+                            
+                    <input type="text" name="apellido" placeholder=" Indique su apellido"  id="Apellido" value="<%= locals.oldData ? oldData.apellido : null %>" > 
+
+                    <% if (locals.errors && errors.apellido){ %>
+                        <div class="error">
+                            <%= errors.apellido.msg %>
+                        </div>
+                
+                        <% } %>
                 </div>
                 <div class="input">
-                    <input type="email" name="correo" placeholder=" Correo electrónico" required id="Correo">
+                    <input type="email" name="correo" placeholder=" Correo electrónico"  id="Correo" value="<%= locals.oldData ? oldData.correo : null %>" >
+                    <% if (locals.errors && errors.correo){ %>
+                        <div class="error">
+                            <%= errors.correo.msg %>
+                        </div>
+                
+                        <% } %>
                 </div>
                 <div class="input">
-                    <input type="password" name="contraseña" placeholder=" Contraseña" required id="contraseña">
+                    <input type="password" name="contrasenia" placeholder=" Contraseña"  id="contrasenia" value="<%= locals.oldData ? oldData.contrasenia : null %>" >
+                    <% if (locals.errors && errors.contrasenia){ %>
+                        <div class="error">
+                            <%= errors.contrasenia.msg %>
+                        </div>
+                
+                        <% } %>
                 </div>
-                <div class="input">
-                    <input type="password" name="contraseña" placeholder=" Repita su contraseña" required id="contraseña">
-                </div>
+                
                 <div id="fecha-de-nacimiento">
                     <p>Fecha de nacimiento</p>
                 </div>
                 <div class="input">
-                    <input type="date" name="fechaNacimiento" placeholder=" Fecha de nacimiento" required id="fecha-nacimiento">
+                    <input type="date" name="fechaNacimiento" placeholder=" Fecha de nacimiento"  id="fecha-nacimiento" value="<%= locals.oldData ? oldData.fechaNacimiento : null %>" >
+                    <% if (locals.errors && errors.fechaNacimiento){ %>
+                        <div class="error"> 
+                            <%= errors.fechaNacimiento.msg %>
+                        </div>
+                
+                        <% } %>
                 </div>
                 <div class="sexo">
                     <div>
-                        <label><input type="radio" name="sexo" value="Hombre"> Hombre</label>
+                        <label><input type="radio" name="sexo" value="Hombre" value="<%= locals.oldData ? oldData.sexo : null %>" > Hombre</label>
                     
                     </div>
                     <div>
-                        <label><input type="radio" name="sexo" value="Mujer"> Mujer</label>
+                        <label><input type="radio" name="sexo" value="Mujer" value="<%= locals.oldData ? oldData.sexo : null %>" > Mujer</label>
                         
                     </div>
                     <div>
-                        <label><input type="radio" name="sexo" value="Otros"> Otros</label>
+                        <label><input type="radio" name="sexo" value="Otros" value="<%= locals.oldData ? oldData.sexo : null %>" > Otros</label>
                         
                     </div>
+                    
+                    <% if (locals.errors && errors.sexo){ %>
+                        <div class="error">
+                            <%= errors.sexo.msg %>
+                        </div>
+                
+                        <% } %>
+
+                   
+                </div>
+
+                <div>
+                    <label for="imagenPerfil"> Imagén de Perfil: </label>
+                    <input type="file" name = "imagenPerfil" >
+                    <% if (locals.errors && errors.imagenPerfil) { %>
+                        <div class="error">
+                            <%= errors.imagenPerfil.msg %>
+                        </div>
+                    <% } %>
                 </div>
 
                 <div>

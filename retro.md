@@ -11,3 +11,8 @@ Para poder mejorar y mantener las buenas cosas que debemos hacer o seguir hacien
 
 Retrospectiva Sprint 3:
 Finalizado el Tercer Sprint de este proyecto integrador, pudimos observar que esta vez fue más necesario la división de trabajo debido a que no pudimos coincidir con nuestros tiempos libres, es decir que solo podiamos trabjar por separado y casi no pudimos realizar reuniones para el trabajo conjunto, unicamente las realizamos para consultar el estado de la tarea que le toco a cada uno. Sin embargo pudimos cumplir con los objetivos del trabajo en tiempo y forma. En conclusión, podemos decir que una de las cosas que debemos seguir haciendo, es dividir el trabajo para optimizar mejor el tiempo, y lo que no deberiamos hacer,a pesar de que los objetivos se cumplieron, dejar las reuniones para trabajar en conjunto ya que en las mismas podemos aprender de los compañeros ciertas cosas que a veces a uno le cuesta y el compañero tiene facilidad para desarrolar.
+
+Retrospectiva Sprint 4: 
+Terminado el 4to sprint de nuestro proyecto, logramos observar que pudimos implementar todas las cosas que venimos trabajando de los demás sprint, en cuanto a habilidades blandas respecta, como ser el trabajo en equipo, division de trabajo, comunicación entre los integrantes, y un manejo optimo del tiempo.
+Tambíen pudimos observar posibles mejoras para lo que falta del proyecto, como ser el uso de los dailys.
+En conclusión, hemos mejorado mucho como equipo, pero siempre hay algo nuevo que aprender!
