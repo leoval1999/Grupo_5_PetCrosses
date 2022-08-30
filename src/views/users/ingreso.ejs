@@ -22,12 +22,17 @@
                 <h4 id="subtitulo">INICIAR SESIÓN</h4>
                 <div class="input">
                     <input type="email" name="correo" placeholder=" Correo electrónico" required id="Correo">
+                    <% if (locals.errors && errors.correo) { %>
+                        <div class="error">
+                            <%= errors.correo.msg %>
+                        </div>
+                    <% } %>
                 </div>
                 <div class="input">
-                    <input type="password" name="contraseña" placeholder=" Contraseña" required id="contraseña">
+                    <input type="password" name="contrasenia" placeholder=" Contraseña" required id="contrasenia">
                 </div>
                 <div class="recordar-cuenta">
-                    <label><input type="radio" name="recordar"> Recordar</label>
+                    <label><input type="radio" name="recordar"> Recordar Usuario</label>
                 </div>
                 <div class="recuperar-pass">
                     <p>¿Olvidaste tu contraseña? Haz <a href="/recuperar-cuenta" style="color: red;">Click Aqui</a> para recuperarla.</p>

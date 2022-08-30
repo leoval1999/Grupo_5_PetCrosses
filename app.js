@@ -1,4 +1,6 @@
+const cookies = require("cookie-parser");
 const express = require("express");
+const session = require("express-session");
 const app = express();
 const path = require("path");
 const methodOverride = require('method-override');
@@ -10,6 +12,13 @@ const port = process.env.PORT || 3000;
 app.use(express.urlencoded({ extended: false}));
 app.use(express.json());
 
+app.use(
+    session({
+        secret:  "Secreto",
+        resave: false,
+        saveUninitialized:false
+    })
+)
 
 //routes
 app.use("/", homeRoute);

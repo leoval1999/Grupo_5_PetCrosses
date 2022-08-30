@@ -1,32 +1,41 @@
 [
-    {
-        "id": 1,
-        "name": "Panchito Draye",
-        "email": "pdraye0@php.net",
-        "password": "nsGOItRE",
-        "avatar": "user_1.jpg"
-    },
-    {
-        "id": 2,
-        "nombre": "seba",
-        "apellido": "Maidana",
-        "correo": "sebastian.angel.maidan@gmail.com",
-        "contraseña": [
-            "asdasd",
-            "asdasdasd"
-        ],
-        "fechaNacimiento": "222222-12-12",
-        "sexo": "Hombre"
-    },
-    {
-        "id": 3,
-        "nombre": "",
-        "apellido": "",
-        "correo": "",
-        "contrasenia": [
-            "",
-            ""
-        ],
-        "fechaNacimiento": ""
-    }
+ {
+  "id": 1,
+  "name": "Panchito Draye",
+  "email": "pdraye0@php.net",
+  "password": "nsGOItRE",
+  "avatar": "user_1.jpg"
+ },
+ {
+  "id": 2,
+  "nombre": "seba",
+  "apellido": "Maidana",
+  "correo": "sebastian.angel.maidan@gmail.com",
+  "contraseña": [
+   "asdasd",
+   "asdasdasd"
+  ],
+  "fechaNacimiento": "222222-12-12",
+  "sexo": "Hombre"
+ },
+ {
+  "id": 3,
+  "nombre": "leonel",
+  "apellido": "valenzuela",
+  "correo": "leonel@gmail.com",
+  "contrasenia": "$2a$10$wdUj2hrzMciSP8H5sJX50.BmbTyJvehZdiOx2ryAMVjUM1.ONxZ7S",
+  "fechaNacimiento": "1111-11-11",
+  "sexo": "Hombre",
+  "imagenPerfil": "/img/users/imagenPerfil1661639456089.jpg"
+ },
+ {
+  "id": 4,
+  "nombre": "pedro",
+  "apellido": "molina",
+  "correo": "pedro@gmail.com",
+  "contrasenia": "$2a$10$nef6C6kMM88sWJhME6aqZeXPJS2fsH/KUKv1fkZfFYzOhrVNaYiUS",
+  "fechaNacimiento": "2022-02-01",
+  "sexo": "Mujer",
+  "imagenPerfil": "/img/users/imagenPerfil1661723735214.jpg"
+ }
 ]

@@ -62,9 +62,7 @@
                 
                         <% } %>
                 </div>
-                <div class="input">
-                    <input type="password" name="contrasenia" placeholder=" Repita su contraseña"  id="contrasenia" >
-                </div>
+                
                 <div id="fecha-de-nacimiento">
                     <p>Fecha de nacimiento</p>
                 </div>
@@ -103,13 +101,12 @@
 
                 <div>
                     <label for="imagenPerfil"> Imagén de Perfil: </label>
-                    <input type="file" name = "imagenPerfil" accept=".jpg, .jpeg" value="<%= locals.oldData ? oldData.imagenPerfil : null %>">
-                    <% if (locals.errors && errors.imagenPerfil){ %>
+                    <input type="file" name = "imagenPerfil" >
+                    <% if (locals.errors && errors.imagenPerfil) { %>
                         <div class="error">
                             <%= errors.imagenPerfil.msg %>
                         </div>
-                
-                        <% } %>
+                    <% } %>
                 </div>
 
                 <div>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetCrosses</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/perfil.css">
+    <script src="https://kit.fontawesome.com/2e3686342e.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2e3686342e.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body class="body">
+    <%- include('../partials/header') %>
+
+    <main>
+        <div class="perfilUsuario">
+            <h2>PERFIL <%= user.nombre %></h2>
+            <div>
+                <img src="<%= user.imagenPerfil %>" id = "imagenUsuario" alt="">
+                <ul class="lista-datos">
+                    <li><i class="fa-solid fa-at"></i>Correo: <%= user.correo %> </li>
+                    <li><i class="fa-solid fa-check"></i> Nombre: <%= user.nombre %> </li>
+                    <li><i class="fa-solid fa-check"></i> Apellido: <%= user.apellido %></li>
+                    
+                   
+            </div>
+        </div>
+      
+        <div class="cerrar-sesion">
+            <h2>CERRAR SESIÓN</h2>
+            <a href="/cerrarSesion">
+                <i class="fa-solid fa-right-from-bracket"></i>
+            </a>
+            
+        </div>
+        
+    </main>
+
+        <%- include('../partials/footer') %>
+</body>
+
+</html>

@@ -1,7 +1,9 @@
+const bcryptjs = require('bcryptjs');
 const fs = require('fs');
 const path = require('path');
 let productos = require('./../data/productos.json');
 let users = require('./../data/users.json');
+let User = require('../models/Users')
 const {validationResult} = require('express-validator');
 
 const homeController ={
@@ -12,6 +14,10 @@ const homeController ={
     ingreso: (req,res)=>{res.render('./users/ingreso')},
     carritoCompras: (req,res)=>{res.render('./products/carrito')},
     detalle: (req,res)=>{res.render('./products/detalle')},
+    perfil: (req,res) => {
+        res.render('./users/perfilUsuario', {
+            user: req.session.usuarioLogueado
+        })},
 //productos
     products: (req,res)=>{res.render('./admin/products', {productos})},
     crearProducto: (req, res) => {
@@ -73,10 +79,12 @@ const homeController ={
 
 
     },
-    
+    // Usuarios
     registrar: (req, res) => {
-        const newId = users[(users.length - 1)].id + 1;
+        let file = req.file
+        /* const newId = users[(users.length - 1)].id + 1;
         let usuarioCreado = {
+            
             id: newId,
             nombre: req.body.nombre,
             apellido: req.body.apellido,
@@ -84,8 +92,11 @@ const homeController ={
             contrasenia:req.body.contrasenia,
             fechaNacimiento: req.body.fechaNacimiento,
             sexo: req.body.sexo,
-            imagenPerfil: req.body.imagenPerfil
+           if(file){
+            imagenPerfil:  `/img/users/${file.filename}`
+           } 
         }
+        
             users.push(usuarioCreado);
             fs.writeFileSync(
                 path.join(__dirname, "../data/users.json"),
@@ -94,11 +105,10 @@ const homeController ={
                     encoding: "utf-8",
                 }
             )
-        
+        */
        
 
         const resultadoValidaciones = validationResult(req);
-        console.log(resultadoValidaciones)
         if(resultadoValidaciones.errors.length > 0){
             return res.render('./users/registro',{
                 errors: resultadoValidaciones.mapped(),
@@ -106,10 +116,52 @@ const homeController ={
             });    
         }
 
-        return res.send('Ok, las validaciones se pasaron y no tienes errores');
+        let userInDB = User.findField('correo', req.body.correo);
+        if (userInDB){
+            return res.render('./users/registro',{
+                errors: {correo: {
+                    msg:'Este Email ya está registrado'
+                }
+            },
+                oldData: req.body
+            });    
+        }
+
+       let userToCreate = {
+        ...req.body,
+        contrasenia: bcryptjs.hashSync(req.body.contrasenia, 10),
+            imagenPerfil: `/img/users/${file.filename}`
+
+       }
+
+       User.create(userToCreate);
+        return res.redirect('/ingreso')
     },
+    ingreso:(req,res) => {
+        return res.render('./users/ingreso');
+    },
+
     ingresar: (req, res) => {
-       res.redirect("/");
+       let usuarioRegistrar = User.findField('correo', req.body.correo);
+       if(usuarioRegistrar){
+        let contraseniaCorrecta = bcryptjs.compareSync(req.body.contrasenia, usuarioRegistrar.contrasenia)
+        if(contraseniaCorrecta){
+            delete usuarioRegistrar.contrasenia
+            req.session.usuarioLogueado = usuarioRegistrar; 
+            return res.redirect("/perfil")
+        }
+       }
+       return res.render('./users/ingreso',{
+        errors: {
+            correo: {
+                msg: 'Las credenciales son inválidas'
+            }
+        }
+       })
+    },
+    cerrarSesion: (req,res) =>{
+        req.session.destroy();
+        return res.redirect('/');
     }
 }
 module.exports = homeController;
