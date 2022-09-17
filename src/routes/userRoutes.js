@@ -1,6 +1,6 @@
 const express = require("express");
 const routes = express.Router();
-const homeRoute = require("../controllers/homeController");
+const user = require("../controllers/userController");
 const multer = require("multer");
 const path = require("path");
 const {body} = require('express-validator');
@@ -9,13 +9,11 @@ const upload = require ("../middlewares/uploadFile");
 const invitado = require("../middlewares/invitado");
 const autenticado = require("../middlewares/autenticado");
 
-routes.get("/", homeRoute.inicio);
-routes.get("/citas", homeRoute.citas);
-routes.get("/petshop",homeRoute.petshop);
-routes.get("/registro", invitado ,homeRoute.registro);
-routes.get("/ingreso", invitado ,homeRoute.ingreso);
-routes.get("/carrito-compras",homeRoute.carritoCompras);
-routes.get("/detalle",homeRoute.detalle);
+//routes.get('/perfil', autenticado , user.perfil);
+routes.get('/ingresar', user.ingreso);
+routes.post("/ingresar", user.ingresar);
+routes.post("/registrar", upload.single('imagenPerfil'), validaciones ,user.registrar);
+routes.get('/cerrarSesion', user.cerrarSesion);
 
 
 module.exports = routes;  

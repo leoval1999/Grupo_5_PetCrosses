@@ -57,5 +57,15 @@
   "fechaNacimiento": "1999-10-10",
   "sexo": "Otros",
   "imagenPerfil": "/img/users/imagenPerfil1662595680315.jpg"
+ },
+ {
+  "id": 7,
+  "nombre": "tobias",
+  "apellido": "correa",
+  "correo": "tobias@gmail.com",
+  "contrasenia": "$2a$10$EjBApK5V2vCIUaWTc6rFB.Hii4PpC3B.UNwkueB4FLr3MyrB78um6",
+  "fechaNacimiento": "1111-11-11",
+  "sexo": "Hombre",
+  "imagenPerfil": "/img/users/imagenPerfil1663369716632.jpg"
  }
 ]

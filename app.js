@@ -7,6 +7,10 @@ const methodOverride = require('method-override');
 app.use(methodOverride('_method'));
 const publicPath = path.join(__dirname,"/public");
 const homeRoute = require("./src/routes/mainRoutes");
+const userRoute = require("./src/routes/userRoutes");
+const productRoute = require("./src/routes/productRoutes");
+const productController = require("./src/controllers/productController");
+
 const port = process.env.PORT || 3000;
 
 app.use(express.urlencoded({ extended: false}));
@@ -22,6 +26,8 @@ app.use(
 
 //routes
 app.use("/", homeRoute);
+app.use("/products", productRoute);
+app.use("/user", userRoute);
 //archivos estáticos
 app.use(express.static(publicPath));
 

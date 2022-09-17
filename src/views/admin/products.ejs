@@ -21,7 +21,7 @@
         <div class="contenedor-edicion">
             <div class="crear-producto">
                 <h2 class="titulo-crear-producto">Crear producto</h2>
-                <form class="formulario"action="/products/crear-producto" method="POST">
+                <form class="formulario"action="/products" method="POST">
                     <div class="nombre-producto">
                         <label for="producto">Producto:</label>
                         <input type="text" name="producto" placeholder="Nombre del producto" required id="producto">
@@ -38,6 +38,7 @@
                         <label for="cantidad">Stock:</label>
                         <input class="stock-producto" type="number" name="cantidad" placeholder="Stock"min = "0">
                     </div>
+                    
                     <div class="imagen-producto">
                         <input type="file" name = "img" id="subir-img" accept=".jpg">
                     </div>
@@ -53,7 +54,9 @@
                         <p class="item-producto"><span>Producto:</span><%= productos[i].producto%></p>
                         <p class="item-precio"><span>Precio:</span> <%= productos[i].precio%></p>
                         <p class="item-cantidad"><span>Stock:</span> <%= productos[i].cantidad%></p>
+                        
                         <form action="/products/edit-producto/<%= productos[i].id%>" method="GET">
+                            
                         <input type="submit" class="editar-producto" value="Editar">
                         </form>
                         <form action="/products/eliminar-producto/<%= productos[i].id%>?_method=DELETE" method="POST">
