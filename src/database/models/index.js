@@ -1,5 +1,6 @@
 'use strict';
 
+const { signedCookies } = require('cookie-parser');
 const fs = require('fs');
 const path = require('path');
 const Sequelize = require('sequelize');

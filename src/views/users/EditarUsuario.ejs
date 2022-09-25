@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetCrosses</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/registro.css">
+    <script src="https://kit.fontawesome.com/2e3686342e.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2e3686342e.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <%- include('../partials/header') %>
+    <section class="section-formulario">
+
+        
+
+        <div class="formulario">
+            <form action="/user/<%=usuario.user_id%>/editar?_method=PUT" method="POST" enctype="multipart/form-data">
+                <h4 id="subtitulo">EDITAR USUARIO</h4>
+                <div class="nombre-apellido">
+                    
+                    <input type="text" name="nombre" placeholder=" Indique su nombre"  id="nombre" value="<%= usuario.user_name %>" >
+
+                    
+                        <% if (locals.errors && errors.nombre){ %>
+                            <div class="error">
+                                <%= errors.nombre.msg %>
+                            </div>
+                    
+                            <% } %>
+                            
+                    <input type="text" name="apellido" placeholder=" Indique su apellido"  id="Apellido" value="<%= usuario.user_surname %>" > 
+
+                    <% if (locals.errors && errors.apellido){ %>
+                        <div class="error">
+                            <%= errors.apellido.msg %>
+                        </div>
+                
+                        <% } %>
+                </div>
+                <div class="input">
+                    <input type="email" name="correo" placeholder=" Correo electrónico"  id="Correo" value="<%= usuario.user_email %>" >
+                    <% if (locals.errors && errors.correo){ %>
+                        <div class="error">
+                            <%= errors.correo.msg %>
+                        </div>
+                
+                        <% } %>
+                </div>
+                <div class="input">
+                    <input type="password" name="contrasenia" placeholder=" Contraseña"  id="contrasenia" value="<%= usuario.user_password %>" >
+                    <% if (locals.errors && errors.contrasenia){ %>
+                        <div class="error">
+                            <%= errors.contrasenia.msg %>
+                        </div>
+                
+                        <% } %>
+                </div>
+                
+                <div id="fecha-de-nacimiento">
+                    <p>Fecha de nacimiento</p>
+                </div>
+                <div class="input">
+                    <input type="date" name="fechaNacimiento" placeholder=" Fecha de nacimiento"  id="fecha-nacimiento" value="<%= usuario.user_date %>" >
+                    <% if (locals.errors && errors.fechaNacimiento){ %>
+                        <div class="error"> 
+                            <%= errors.fechaNacimiento.msg %>
+                        </div>
+                
+                        <% } %>
+                </div>
+                <div class="sexo">
+                    <div>
+                        <label for="sexo">Seleccione su género</label>
+                        <select name="sexo" >
+                            <option value="Hombre">Hombre</option>
+                            <option value="Mujer">Mujer</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </div>
+                    
+                    <% if (locals.errors && errors.sexo){ %>
+                        <div class="error">
+                            <%= errors.sexo.msg %>
+                        </div>
+                
+                        <% } %>
+
+                   
+                </div>
+
+                <div>
+                    <label for="imagenPerfil"> Imagén de Perfil: </label>
+                    <input type="file" name = "imagenPerfil" >
+                    <% if (locals.errors && errors.imagenPerfil) { %>
+                        <div class="error">
+                            <%= errors.imagenPerfil.msg %>
+                        </div>
+                    <% } %>
+                </div>
+
+                <div>
+                    <!-- <a href="/user/<%=usuario.user_id%>/editar"><input id="boton-registrarme" type="submit" value="EDITAR"></a> -->
+                    <button class="formulario__icon-submit" type="submit">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </button>
+                </div>
+               
+            </form>
+        </div>
+    </section>
+    <%- include('../partials/footer') %>
+</body>
+</html>

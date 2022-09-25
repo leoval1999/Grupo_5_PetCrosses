@@ -1,5 +1,5 @@
 const express = require("express");
-const routes = express.Router();
+const router = express.Router();
 const multer = require("multer");
 const path = require("path");
 const {body} = require('express-validator');
@@ -10,15 +10,18 @@ const autenticado = require("../middlewares/autenticado");
 
 const productController = require("../controllers/productController");
 
+router.get("/crear",productController.crear);
 
 
-routes.get("/products",productController.crearProducto);
+// router.get("/",productController.crearProducto);
 
-// CREACIÒN
-routes.post("/products/crear-producto", productController.crearProducto),
-routes.delete("/products/eliminar-producto/:id", productController.eliminarProducto);
-routes.get("/products/edit-producto/:id", productController.modoEditarProducto)
-routes.put("/products/editar-producto/:id", productController.editarProducto);
+// // CREACIÒN
+// router.post("/crear-producto", productController.crearProducto),
+// router.delete("/eliminar-producto/:id", productController.eliminarProducto);
+// router.get("/edit-producto/:id", productController.modoEditarProducto)
+// router.put("/editar-producto/:id", productController.editarProducto);
+// router.get("/carrito-compras",productController.carritoCompras);
+// router.get("/detalle",productController.detalle);
 
 
-module.exports = routes;  
+module.exports = router;  

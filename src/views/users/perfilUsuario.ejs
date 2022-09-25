@@ -21,11 +21,11 @@
         <div class="perfilUsuario">
             <h2>PERFIL <%= user.nombre %></h2>
             <div>
-                <img src="<%= user.imagenPerfil %>" id = "imagenUsuario" alt="">
+                <img src="<%= user.user_image %>" id = "imagenUsuario" alt="">
                 <ul class="lista-datos">
-                    <li><i class="fa-solid fa-at"></i>Correo: <%= user.correo %> </li>
-                    <li><i class="fa-solid fa-check"></i> Nombre: <%= user.nombre %> </li>
-                    <li><i class="fa-solid fa-check"></i> Apellido: <%= user.apellido %></li>
+                    <li><i class="fa-solid fa-at"></i>Correo: <%= user.user_email %> </li>
+                    <li><i class="fa-solid fa-check"></i> Nombre: <%= user.user_name %> </li>
+                    <li><i class="fa-solid fa-check"></i> Apellido: <%= user.user_surname %></li>
                     
                    
             </div>
@@ -33,10 +33,24 @@
       
         <div class="cerrar-sesion">
             <h2>CERRAR SESIÓN</h2>
-            <a href="/cerrarSesion">
+            <a href="/user/cerrarSesion">
                 <i class="fa-solid fa-right-from-bracket"></i>
             </a>
             
+        </div>
+        <div class="cerrar-sesion">
+            <h2>EDITAR USUARIO</h2>
+            <a href="/user/<%=user.user_id%>/editar">
+                <i class="fa-solid fa-user-pen"></i>
+            </a>
+            
+        </div>
+        <div class="cerrar-sesion">
+            <form action="/user/<%=user.user_id%>/borrar?_method=DELETE" method="POST">
+                <button type="submit">BORRAR USUARIO</button>
+            </form>
+        
+        
         </div>
         
     </main>

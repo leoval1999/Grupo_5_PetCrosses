@@ -1,8 +1,9 @@
 //productos
+db = require("../database/models")
 const productController ={
 products: (req,res)=>{res.render('./admin/products', {productos})},
 
-crearProducto: (req, res) => {
+crear: (req, res) => {
     const newId = productos[(productos.length - 1)].id + 1;
     let productoCreado = {
         id: newId,
@@ -60,7 +61,9 @@ editarProducto: (req, res) => {
     res.render("./admin/products", {productos});
 
 
-}
+},
+carritoCompras: (req,res)=>{res.render('./products/carrito')},
+detalle: (req,res)=>{res.render('./products/detalle')}
 }
 
 module.exports = productController;

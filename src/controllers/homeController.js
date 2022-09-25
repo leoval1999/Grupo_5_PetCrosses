@@ -5,6 +5,8 @@ let productos = require('./../data/productos.json');
 let users = require('./../data/users.json');
 let User = require('../models/Users')
 const {validationResult} = require('express-validator');
+const db = require('../database/models');
+const sequelize = require('sequelize');
 
 const homeController ={
     inicio: (req,res)=>{ res.render('./products/home')},
@@ -12,12 +14,25 @@ const homeController ={
     petshop: (req,res)=>{res.render('./products/petshop')},
     registro: (req,res)=>{res.render('./users/registro')}, 
     ingreso: (req,res)=>{res.render('./users/ingreso')},
-    carritoCompras: (req,res)=>{res.render('./products/carrito')},
-    detalle: (req,res)=>{res.render('./products/detalle')},
+    
     perfil: (req,res) => {
         res.render('./users/perfilUsuario', {
             user: req.session.usuarioLogueado
         })},
+    test: {
+        funciona: (req, res) => {
+            db.Usuario.findByPk(1)
+                .then(usuario => {
+                    console.log(usuario.user_name)
+                    if (usuario.user_name == 'Leonel') {
+                        res.send('Funciona!!');
+                    }
+                });
+        }
+    }
+            
+        
+    
 
 }
     

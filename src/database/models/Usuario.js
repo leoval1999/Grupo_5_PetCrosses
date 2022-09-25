@@ -26,12 +26,10 @@ module.exports = function(sequelize,dataTypes){
         user_date:{
             type: dataTypes.DATE
         },
-        user_genre:{
+        user_gender:{
             type: dataTypes.STRING
-        },
-        user_esAdmin:{
-            type: dataTypes.TINYINT
         }
+
     }
 
     let config = {
@@ -41,16 +39,18 @@ module.exports = function(sequelize,dataTypes){
 
     let Usuario = sequelize.define(alias,cols,config);
 
-    Usuario.associate = function (models){
+   /* Usuario.associate = function (models){
         Usuario.hasMany(models.Perro,{
             as: "perros",
             foreignKey: "user_id"
         })
     }
-    
+    */
     return Usuario
 }
 
+
+/*
 const path = require('path');
 const fs = require('fs');
 
@@ -109,4 +109,4 @@ findField : function (field, text){
 
 }
 
-module.exports = User;
+module.exports = User;*/

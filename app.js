@@ -25,9 +25,10 @@ app.use(
 )
 
 //routes
-app.use("/", homeRoute);
+
 app.use("/products", productRoute);
 app.use("/user", userRoute);
+app.use("/", homeRoute);
 //archivos estáticos
 app.use(express.static(publicPath));
 

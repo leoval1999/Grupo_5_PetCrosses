@@ -27,45 +27,5 @@
   "fechaNacimiento": "1111-11-11",
   "sexo": "Hombre",
   "imagenPerfil": "/img/users/imagenPerfil1661639456089.jpg"
- },
- {
-  "id": 4,
-  "nombre": "pedro",
-  "apellido": "molina",
-  "correo": "pedro@gmail.com",
-  "contrasenia": "$2a$10$nef6C6kMM88sWJhME6aqZeXPJS2fsH/KUKv1fkZfFYzOhrVNaYiUS",
-  "fechaNacimiento": "2022-02-01",
-  "sexo": "Mujer",
-  "imagenPerfil": "/img/users/imagenPerfil1661723735214.jpg"
- },
- {
-  "id": 5,
-  "nombre": "Felipe",
-  "apellido": "Saravia",
-  "correo": "felipe@gmail.com",
-  "contrasenia": "$2a$10$2Rp3cyDI94.OvYqPgWzFS.a9XaorkO6qC.S9Q4Ibw5DHzZiMh36uS",
-  "fechaNacimiento": "1999-10-10",
-  "sexo": "Mujer",
-  "imagenPerfil": "/img/users/imagenPerfil1662595575132.jpg"
- },
- {
-  "id": 6,
-  "nombre": "luisito",
-  "apellido": "covit",
-  "correo": "luisito@gmail.com",
-  "contrasenia": "$2a$10$Trp8NkzToLCm8aUc2BGLoeSJBuS4UzuMR1JxS9aZ/m.YfGoBernCC",
-  "fechaNacimiento": "1999-10-10",
-  "sexo": "Otros",
-  "imagenPerfil": "/img/users/imagenPerfil1662595680315.jpg"
- },
- {
-  "id": 7,
-  "nombre": "tobias",
-  "apellido": "correa",
-  "correo": "tobias@gmail.com",
-  "contrasenia": "$2a$10$EjBApK5V2vCIUaWTc6rFB.Hii4PpC3B.UNwkueB4FLr3MyrB78um6",
-  "fechaNacimiento": "1111-11-11",
-  "sexo": "Hombre",
-  "imagenPerfil": "/img/users/imagenPerfil1663369716632.jpg"
  }
 ]
