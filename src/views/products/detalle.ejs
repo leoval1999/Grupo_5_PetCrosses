@@ -56,17 +56,21 @@
             <div class="opciones-producto">
                 
                 <div class="padre-botones">
-                    
+                    <% if(locals && locals.esAdmin){ %>
                     <div class="padre-boton-editar">
                         <a href="/products/<%= producto.product_id%>/editar" ><input class="boton-editar" id="boton-finalizar" type="submit" value="Editar"></a>
                     </div>
+                    <% } %>
                     
+                    <% if(locals && locals.esAdmin){ %>
+                        
                     <div class="padre-boton-finalizar">
                         <form action="/products/<%= producto.product_id%>/petshop/borrar?_method=DELETE" method="POST">
                             <button type="submit" class="boton-eliminar">Eliminar</button>
                         </form>
                        
                     </div>
+                    <% } %>
                     
                 </div>
         </section>

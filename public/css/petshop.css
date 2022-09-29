@@ -14,8 +14,8 @@ body{
     flex-wrap: wrap;
 }
 .contenedor-producto{
-    background-color: #fff;
-    border: solid 2px gray;
+    background-color: rgb(255, 207, 235);
+    border: solid 2px rgb(0, 0, 0);
     width: 30%;
     margin: 20px;
     padding: 20px;
@@ -28,7 +28,7 @@ body{
 .precio-petshop{
     margin-top: 10px;
     text-align: center;
-    border: solid 2px grey;
+    border: solid 2px gray;
     border-radius: 5px;
 }
 p{
