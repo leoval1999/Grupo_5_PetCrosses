@@ -22,32 +22,23 @@
         <section class = "img-detalles">
             <article class="imagen-grande">
                 <div class="imagen-detalle">
-                    <img id="img-detalle" src="/img/collar-anti.jpg" alt="">
+                    <img id="img-detalle" src="<%= producto.product_image%>" alt="">
 
                 </div>
             </article>
-            <article class="imagen-chica">
-                <div>
-                    <img id="img-chica-1" src="/img/collar-anti-seresto-2.jpg" alt="">
-                </div>
-                <div>
-                    <img src="/img/collar-anti-seresto-3.jpg" alt="">
-                </div>
-                <div>
-                    <img src="img/collar-anti-seresto-4.jpg" alt="">
-                </div>
-            </article>
+            
 
         </section>
         <section class="detalle-titulo">
-            <h4 class="titulo-producto">Collar Anti-pulgas Seresto</h4>
-            <p class="stock">Stock disponible: 5</p>
-            <p class="precio-anterior"> PRECIO ANTERIOR: <span>$2000</span></p>
-            <h4 class="precio-actual">Precio: $1500</h4>
-            <p class="cuotas">Cuotas: en 12 x $208,33</p>
+            <h4 class="titulo-producto"><%= producto.product_name%></h4>
+            <p class="stock">Stock disponible: <%= producto.product_stock%></p>
+            <p class="precio-anterior"> categoria: <%=categoria.category_name%></p>
+            <p class="precio-anterior">  <%=subcategoria.subcategory_name%></p>
+            <h4 class="precio-actual">Precio: $<%= producto.product_price%></h4>
+            
             <div class="cantidad">
                 <p>Cantidad</p>
-                <input  id = "boton-cantidad" type="number" name="cantidad" >
+                <input  id = "boton-cantidad" type="number" name="cantidad">
             </div>
         </section>
     </div>
@@ -55,9 +46,7 @@
         <section class="descripcion">
             <p id="titulo-desc">DESCRIPCIÓN</p>
             <p id ="descripcion">
-                Resistente al agua <br>
-                Con una duración de 8 meses <br>
-                Inoloro <br>
+                <%= producto.product_description%>
 
             </p>
 
@@ -69,11 +58,14 @@
                 <div class="padre-botones">
                     
                     <div class="padre-boton-editar">
-                        <a href="/products" ><input class="boton-editar" id="boton-finalizar" type="submit" value="Editar"></a>
+                        <a href="/products/<%= producto.product_id%>/editar" ><input class="boton-editar" id="boton-finalizar" type="submit" value="Editar"></a>
                     </div>
                     
                     <div class="padre-boton-finalizar">
-                        <a href="/carrito-compras" ><input id="boton-finalizar" type="submit" value="Agregar al carrito"></a>
+                        <form action="/products/<%= producto.product_id%>/petshop/borrar?_method=DELETE" method="POST">
+                            <button type="submit" class="boton-eliminar">Eliminar</button>
+                        </form>
+                       
                     </div>
                     
                 </div>

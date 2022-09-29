@@ -21,10 +21,10 @@
         <div class="contenedor-edicion">
             <div class="crear-producto">
                 <h2 class="titulo-crear-producto">Crear producto</h2>
-                <form class="formulario"action="/products/crear-producto" method="POST">
+                <form class="formulario"action="/products/crear" method="POST" enctype="multipart/form-data">
                     <div class="nombre-producto">
-                        <label for="producto">Producto:</label>
-                        <input type="text" name="producto" placeholder="Nombre del producto" required id="producto">
+                        <label for="nombre">Producto:</label>
+                        <input type="text" name="nombre" placeholder="Nombre del producto" required id="nombre">
                     </div>
                     <div class="precio-producto">
                         <label for="precio">Precio:</label>
@@ -38,31 +38,43 @@
                         <label for="cantidad">Stock:</label>
                         <input class="stock-producto" type="number" name="cantidad" placeholder="Stock"min = "0">
                     </div>
+                    
                     <div class="imagen-producto">
                         <input type="file" name = "img" id="subir-img" accept=".jpg">
                     </div>
+
+                    <div>
+                        <label for="categoria">Categorías:</label>
+                        <select name="categoria" >
+                            <% for ( let i = 0; i < categorias.length; i++){ %>
+
+                            
+                            <option value="<%= categorias[i].category_id%>">
+                                <%= categorias[i].category_name %>
+                            </option>
+                            <% } %>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="subcategoria">Subcategorías:</label>
+                        <select name="subcategoria" >
+                            <% for ( let i = 0; i < subcategorias.length; i++){ %>
+
+                            
+                            <option value="<%= subcategorias[i].subcategory_id%>">
+                                <%= subcategorias[i].subcategory_name %>
+                            </option>
+                            <% } %>
+                        </select>
+                    </div>
+                    
                     <div class="boton-crear">
-                        <input type="submit" >
+                        <button type="submit">CREAR</button>
                     </div>
                    
                 </form>
             </div>
-            <div class="lista-productos">
-                <% for(let i = 0; i < productos.length; i++) {%>
-                    <div class = "productos-creados">
-                        <p class="item-producto"><span>Producto:</span><%= productos[i].producto%></p>
-                        <p class="item-precio"><span>Precio:</span> <%= productos[i].precio%></p>
-                        <p class="item-cantidad"><span>Stock:</span> <%= productos[i].cantidad%></p>
-                        <form action="/products/edit-producto/<%= productos[i].id%>" method="GET">
-                        <input type="submit" class="editar-producto" value="Editar">
-                        </form>
-                        <form action="/products/eliminar-producto/<%= productos[i].id%>?_method=DELETE" method="POST">
-                        <input type="submit" class="eliminar-producto" value="Eliminar">
-                        </form>
-                        </div> 
-                <% }%>
-                
-                </div>
+            
             </div>
         </div>
 </body>

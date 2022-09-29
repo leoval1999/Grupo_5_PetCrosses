@@ -1,6 +1,7 @@
 function invitado (req,res,next){
 if(req.session.usuarioLogueado){
-    return res.redirect("/perfil")
+    console.log(req.session.usuarioLogueado.user_id)
+    return res.redirect("/user/perfil")
 }
 next();
 }
