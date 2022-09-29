@@ -3,8 +3,6 @@
 const bcryptjs = require('bcryptjs');
 const fs = require('fs');
 const path = require('path');
-let productos = require('./../data/productos.json');
-let user = require('./../data/users.json');
 let User = require('../models/Users')
 const { validationResult } = require('express-validator');
 //const sequelize = require('sequelize')
@@ -39,8 +37,13 @@ const userController = {
                 user_date: req.body.fechaNacimiento,
                 user_gender: req.body.sexo
             })
+            .then(respuesta => {
+                console.log(respuesta)
+                res.redirect('/user/ingresar')
+            })
+            .catch(error => { console.log(error) })
 
-            return res.redirect('/user/ingresar')
+         
         }
 
     },
@@ -117,7 +120,6 @@ const userController = {
                 user_id: req.params.id
             }
         })
-        console.log(req.params.id)
         req.session.destroy();
         res.redirect('/user/ingresar')
 

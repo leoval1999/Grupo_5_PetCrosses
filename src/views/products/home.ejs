@@ -57,27 +57,29 @@
         <section class="nosotros">
             <p class="texto">
                 <h4 class="titulo-texto">UN OBJETIVO SIMPLE</h4>
-                PetCrosses es un sitioWeb donde podrás registrar a tus mascotas, para que ella pueda encontrar a su pareja ideal,
-                podrás usar filtros para encontrar la pareja más cercana y solo las razas que te interesen.
-                También contarás con una sección de PetShop donde encontrarás todos los artículos disponibles para que ellos puedan
-                disfrutar de los mejores alimentos,juguetes, accesorios y muchas cosas más!!!
+                PetCrosses es un sitioWeb donde podrás adquirir alimentos, articulos de higiene,
+                collares, antiparasitarios,medicamentos y muchos mas accesorios para tus mascotas. 
+                
 
             </p>
         </section>
         <section class="productos-destacados">
             <h2 class="titulo-productos">PRODUCTOS DESTACADOS</h2>
             <div class="productos-destacados-pc">
+                <% for (let i = 0; i < 5; i++){ %>
                 <article class="art-producto">
-                    <h4 class="titulo-articulo"><a href="/products/detalle">Collar Antipulgas</a></h4>
-                    <a href="/products/detalle"><img id="destacado-1" src="/img/collar-anti.jpg" alt="collar anti pulgas"></a>
+
+                    <h4 class="titulo-articulo"><a href="">Collar Antipulgas</a></h4>
+                    <a href="><img id="destacado-1" src="/img/collar-anti.jpg" alt="collar anti pulgas"></a>
                     <div class="descripciones">
-                        <p> Para perros de más de 8kg</p>
+                        <p> </p>
                     </div>
                     <div class="padre-precio">
                         <p class="precio">$999</p>
                     </div>
-
+    
                 </article>
+                <% } %>
                 <article class="art-producto">
                     <h4 class="titulo-articulo"><a href="/products/detalle">Collar</a></h4>
                     <a href="/products/detalle"><img id="destacado-2" src="/img/collar.webp" alt="collar"></a>
@@ -180,48 +182,7 @@
             </div>
         </section>
 
-        <section class="testimo">
-            <article class="titulo.testimonio">
-                <h2 class="titulo-test">TESTIMONIOS</h2>
-            </article>
-            <div class="testimonios">
-                <article class="item-testimonio">
-                    <div class="sub-item-1">
-                        <img id="img-testimonio" src="/img/testimonio-1.jpg" alt="">
-                    </div>
-                    <div class="sub-item-2">
-                        <h4>Juana Perez</h4>
-                        <p> Me encantó PetCrosses, es fácil de usar y pude encontrar en mi zona una pareja para "Firulais". 
-                            Y tienen una amplia variedad en Alimentos tanto para cachorros como para adultos.
-                        </p>
-                    </div>
-                </article>
-                <article class="item-testimonio">
-                    <div class="sub-item-1">
-                        <img id="img-testimonio" src="/img/testimonio-2.jpg" alt="">
-                    </div>
-                    <div class="sub-item-2">
-                        <h4>Maria Fernandez</h4>
-                        <p>
-                            Me recomendaron el sitio porque no podía encontrar una pareja para "Tobi", el registro es super sencillo,
-                            y me dedique plenamente a elegir la pareja ideal para él.
-                        </p>
-                    </div>
-                </article>
-                <article class="item-testimonio">
-                    <div class="sub-item-1">
-                        <img id="img-testimonio" src="/img/testimonio-3.jpg" alt="">
-                    </div>
-                    <div class="sub-item-2">
-                        <h4>Mariano Rodriguez</h4>
-                        <p>
-                            Pude encontrar la pareja para "Luna" rápidamente y además adquiri los productos necesarios para los nuevos
-                            integrantes de la familia, todo en un mismo lugar, aprovechando el envío gratis que ofrecen en mi zona.
-                        </p>
-                    </div>
-                </article>
-            </div>
-        </section>
+        
 
     </main>
     <%- include('../partials/footer') %>

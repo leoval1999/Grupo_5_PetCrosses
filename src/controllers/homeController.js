@@ -5,11 +5,17 @@ let productos = require('./../data/productos.json');
 let users = require('./../data/users.json');
 let User = require('../models/Users')
 const {validationResult} = require('express-validator');
-const db = require('../database/models');
+let db = require("../database/models");
 const sequelize = require('sequelize');
 
 const homeController ={
-    inicio: (req,res)=>{ res.render('./products/home')},
+    inicio: (req,res)=>{ 
+        db.Producto.findAll()
+        .then(function(productos){
+            res.render('./products/home', {productos:productos})
+        })
+        
+    },
     citas: (req,res)=>{res.render('./products/citas')},
     petshop: (req,res)=>{res.render('./products/petshop')},
     registro: (req,res)=>{res.render('./users/registro')}, 

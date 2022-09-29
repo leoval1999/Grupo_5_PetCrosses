@@ -21,35 +21,62 @@
         <div class="contenedor-edicion">
             <div class="crear-producto">
                 <h2 class="titulo-crear-producto">Editar producto</h2>
-                <form class="formulario" action="/products/editar-producto/<%= productosEdit.id%>?_method=PUT" method="POST">
+                <form class="formulario"action="/products/<%= productos.product_id%>/editar?_method=PUT" method="POST" enctype="multipart/form-data">
                     <div class="nombre-producto">
-                        <label for="producto">Producto:</label>
-                        <input type="text" name="producto" placeholder="Nombre del producto" required id="producto" value="<%= productosEdit.producto%>">
+                        <label for="nombre">Producto:</label>
+                        <input type="text" name="nombre" placeholder="Nombre del producto" required id="nombre" value = "<%= productos.product_name%>">
                     </div>
                     <div class="precio-producto">
                         <label for="precio">Precio:</label>
-                        <input type="text" name="precio" placeholder="precio" required id="precio" value="<%= productosEdit.precio%>">
+                        <input type="text" name="precio" placeholder="precio" required id="precio" value = "<%= productos.product_price%>">
                     </div>
                     <div class="descripcion-producto">
                         <label for="decripcion">Descripcion</label>
-                        <input type="text" name="descripcion" placeholder="Descripcion del producto" required id="nombre" value="<%= productosEdit.descripcion%>">
+                        <input type="text" name="descripcion" placeholder="Descripcion del producto" required id="nombre" value = "<%= productos.product_description%>">
                     </div>
                     <div class="cantidad-producto">
                         <label for="cantidad">Stock:</label>
-                        <input class="stock-producto" type="number" name="cantidad" placeholder="Stock"min = "0" value="<%= productosEdit.cantidad%>" >
+                        <input class="stock-producto" type="number" name="cantidad" placeholder="Stock"min = "0" value = "<%= productos.product_stock%>">
                     </div>
-                    
-                    
                     
                     <div class="imagen-producto">
-                        <img src="https://pbs.twimg.com/media/EwFDOt2XIAYD6SN.jpg" alt="imagen" width="150px" height="150px">
+                        <input type="file" name = "img" id="subir-img" accept=".jpg">
                     </div>
+
+                    <div>
+                        <label for="categoria">Categorías:</label>
+                        <select name="categoria" >
+                            <% for ( let i = 0; i < categorias.length; i++){ %>
+
+                            
+                            <option value="<%= categorias[i].category_id%>">
+                                <%= categorias[i].category_name %>
+                            </option>
+                            <% } %>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="subcategoria">Subcategorías:</label>
+                        <select name="subcategoria" >
+                            <% for ( let i = 0; i < subcategorias.length; i++){ %>
+
+                            
+                            <option value="<%= subcategorias[i].subcategory_id%>">
+                                <%= subcategorias[i].subcategory_name %>
+                            </option>
+                            <% } %>
+                        </select>
+                    </div>
+                    
                     <div class="boton-crear">
-                        <input type="submit" >
+                        <button type="submit">EDITAR</button>
                     </div>
                    
                 </form>
             </div>
+            
+            </div>
+        </div>
 </body>
 
 </html>

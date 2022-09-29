@@ -19,6 +19,15 @@ module.exports = function(sequelize,dataTypes){
         },
         product_stock:{
             type: dataTypes.INTEGER
+        },
+        categoryID:{
+            type: dataTypes.INTEGER
+        },
+        subcategoryID:{
+            type: dataTypes.INTEGER
+        },
+        product_image: {
+            type: dataTypes.STRING
         }
     }
 
@@ -29,23 +38,18 @@ module.exports = function(sequelize,dataTypes){
 
     let Producto = sequelize.define(alias,cols,config);
 
-    Producto.associate = function (models){
-        Producto.hasMany(models.Imagen,{
-            as: "imagenes",
-            foreignKey: "product_id"
-        })
-    }
+    
     Producto.associate = function (models){
         Producto.belongsTo(models.Categoria,{
             as: "categoria",
-            foreignKey: "category_id"
+            foreignKey: "categoryID"
         })
     }
 
     Producto.associate = function (models){
         Producto.belongsTo(models.SubCategoria,{
             as: "subcategoria",
-            foreignKey: "subCategory_id"
+            foreignKey: "subCategoryID"
         })
     }
     
