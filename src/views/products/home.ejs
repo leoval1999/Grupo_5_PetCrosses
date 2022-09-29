@@ -69,84 +69,18 @@
                 <% for (let i = 0; i < 5; i++){ %>
                 <article class="art-producto">
 
-                    <h4 class="titulo-articulo"><a href="">Collar Antipulgas</a></h4>
-                    <a href="><img id="destacado-1" src="/img/collar-anti.jpg" alt="collar anti pulgas"></a>
+                    <h4 class="titulo-articulo"><a href=""><%= productos[i].product_name%></a></h4>
+                    <a href="/products/<%=productos[i].product_id%>/petshop"> <img id="destacado-1" src="<%= productos[i].product_image%>" alt="collar anti pulgas"></a>
                     <div class="descripciones">
-                        <p> </p>
+                        <p><%= productos[i].product_description%> </p>
                     </div>
                     <div class="padre-precio">
-                        <p class="precio">$999</p>
+                        <p class="precio"><%= productos[i].product_price%></p>
                     </div>
     
                 </article>
                 <% } %>
-                <article class="art-producto">
-                    <h4 class="titulo-articulo"><a href="/products/detalle">Collar</a></h4>
-                    <a href="/products/detalle"><img id="destacado-2" src="/img/collar.webp" alt="collar"></a>
-                    <div class="descripciones">
-                        <p>Collar 25mm ancho</p>
-                    </div>
-                    <div class="padre-precio">
-                        <p class="precio">$449</p>
-                    </div>
-
-                </article>
-                <article class="art-producto">
-                    <h4 class="titulo-articulo"><a href="/products/detalle">Juguete para Perro</a></h4>
-                    <a href="/products/detalle"><img id="destacado-3" src="/img/jueguete-perro.jpg" alt="juguete perro"></a>
-                    <div class="descripciones">
-                        <p>Hueso de goma ajedrez</p>
-                    </div>
-                    <div class="padre-precio">
-                        <p class="precio">$519</p>
-                    </div>
-
-                </article>
-                <article class="art-producto">
-                    <h4 class="titulo-articulo"><a href="/products/detalle">Correa</a></h4>
-                    <a href="/products/detalle"><img id="destacado-4" src="/img/correa.webp" alt="correa"></a>
-                    <div class="descripciones">
-                        <p>Correa regulable</p>
-                    </div>
-                    <div class="padre-precio">
-                        <p class="precio">$499</p>
-                    </div>
-
-                </article>
-                <article class="art-producto">
-                    <h4 class="titulo-articulo"><a href="/products/detalle">Plato Agua-Comida</a></h4>
-                    <a href="/products/detalle"><img id="destacado-5" src="/img/plato-perro.jpg" alt="plato perro"></a>
-                    <div class="descripciones">
-                        <p>Con divisoria para alimento y Agua</p>
-                    </div>
-                    <div class="padre-precio">
-                        <p class="precio">$299</p>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <section class="formas-pago">
-            <div class="opcion">
-                <i class="fa-solid fa-truck"></i>
-                <p class="envio">ENVIO GRATIS</p>
-                <a href="#" class="envio-gratis">Link a producto con envío gratis</a>
-            </div>
-            <div class="opcion">
-                <i class="fa-solid fa-credit-card"></i>
-                <p class="tarjeta">TARJETA DE CRÉDITO Y DÉBITO</p>
-                <a href="#" class="tarjetas-habilitadas">Link a tarjetas habilitadas</a>
-            </div>
-            <div class="opcion">
-                <i class="fa-solid fa-sack-dollar"></i>
-                <p class="efectivo">EFECTIVO</p>
-                <a href="#" class="efectivo">En sucursales</a>
-            </div>
-            <div class="opcion">
-                <i class="fa-solid fa-dollar-sign"></i>
-                <p class="cuotas">CUOTAS SIN INTÉRES</p>
-                <a href="#" class="cuotas-interes">Productos sin Interés</a>
-            </div>
+               
         </section>
         <section>
             <article class="titulo-marca">

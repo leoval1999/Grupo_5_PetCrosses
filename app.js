@@ -10,6 +10,7 @@ const homeRoute = require("./src/routes/mainRoutes");
 const userRoute = require("./src/routes/userRoutes");
 const productRoute = require("./src/routes/productRoutes");
 const productController = require("./src/controllers/productController");
+const administrador = require("./src/middlewares/administrador")
 
 
 const port = process.env.PORT || 3000;
@@ -24,12 +25,16 @@ app.use(
         saveUninitialized:false
     })
 )
+app.use(administrador);
 
 //routes
 
 app.use("/products", productRoute);
 app.use("/user", userRoute);
 app.use("/", homeRoute);
+
+
+
 
 //archivos estáticos
 app.use(express.static(publicPath));

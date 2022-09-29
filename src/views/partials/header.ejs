@@ -16,9 +16,13 @@
                 <div class="der-opcion">
                   
                     <a href="/user/registro" id="icono-registro"><i class="fa-solid fa-circle-user"></i></a>
-                  
-                    <a href="/products/crear" class="crear-product"><i class="fa-solid fa-circle-plus"></i></a>
+               
+                    <% if(locals && locals.esAdmin){ %>
                     
+                    <a href="/products/crear" class="crear-product"><i class="fa-solid fa-circle-plus"></i></a>
+                <% } %>
+                
+
                 </div>
             </nav>
         </div>
