@@ -28,7 +28,10 @@ module.exports = function(sequelize,dataTypes){
         },
         user_gender:{
             type: dataTypes.STRING
-        }
+        },
+        user_esAdmin:{
+            type: dataTypes.BOOLEAN
+        },
 
     }
 
