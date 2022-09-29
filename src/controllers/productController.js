@@ -9,7 +9,6 @@ const productController = {
 
     crear: (req, res) => {
         if(req.session.usuarioLogueado.user_id == 15){
- console.log(req.session.usuarioLogueado.user_id)
         let pedidoCategorias = db.Categoria.findAll()
         let pedidoSubCategorias = db.SubCategoria.findAll()
         Promise.all([pedidoCategorias,pedidoSubCategorias])
