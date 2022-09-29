@@ -47,7 +47,7 @@
                                     <% } %>
                     </div>
                     <div class="input">
-                        <input type="email" name="correo" placeholder=" Correo electrónico" id="Correo"
+                        <input type="text" name="correo" placeholder=" Correo electrónico" id="Correo"
                             value="<%= locals.oldData ? oldData.correo : null %>">
                         <% if (locals.errors && errors.correo){ %>
                             <div class="error">

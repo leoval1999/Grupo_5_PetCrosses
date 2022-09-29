@@ -69,7 +69,7 @@
                 <% for (let i = 0; i < 5; i++){ %>
                 <article class="art-producto">
 
-                    <h4 class="titulo-articulo"><a href=""><%= productos[i].product_name%></a></h4>
+                    <h4 class="titulo-articulo"><a href="/products/<%=productos[i].product_id%>/petshop"><%= productos[i].product_name%></a></h4>
                     <a href="/products/<%=productos[i].product_id%>/petshop"> <img id="destacado-1" src="<%= productos[i].product_image%>" alt="collar anti pulgas"></a>
                     <div class="descripciones">
                         <p><%= productos[i].product_description%> </p>
