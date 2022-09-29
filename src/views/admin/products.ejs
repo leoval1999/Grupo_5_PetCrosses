@@ -22,21 +22,27 @@
             <div class="crear-producto">
                 <h2 class="titulo-crear-producto">Crear producto</h2>
                 <form class="formulario"action="/products/crear" method="POST" enctype="multipart/form-data">
+                   <div class = "errores">
+                    <ul>
+                        
+                    </ul>
+                   </div>
+                    
                     <div class="nombre-producto">
                         <label for="nombre">Producto:</label>
-                        <input type="text" name="nombre" placeholder="Nombre del producto" required id="nombre">
+                        <input type="text" name="nombre" placeholder="Nombre del producto"  id="nombre">
                     </div>
                     <div class="precio-producto">
                         <label for="precio">Precio:</label>
-                        <input type="text" name="precio" placeholder="precio" required id="precio">
+                        <input type="text" name="precio" placeholder="precio"  id="precio">
                     </div>
                     <div class="descripcion-producto">
                         <label for="decripcion">Descripcion</label>
-                        <input type="text" name="descripcion" placeholder="Descripcion del producto" required id="nombre">
+                        <input type="text" name="descripcion" placeholder="Descripcion del producto"  id="descripcion">
                     </div>
                     <div class="cantidad-producto">
                         <label for="cantidad">Stock:</label>
-                        <input class="stock-producto" type="number" name="cantidad" placeholder="Stock"min = "0">
+                        <input class="stock-producto" type="number" name="cantidad" placeholder="Stock"min = "0" id="cantidad">
                     </div>
                     
                     <div class="imagen-producto">
@@ -45,11 +51,11 @@
 
                     <div>
                         <label for="categoria">Categorías:</label>
-                        <select name="categoria" >
+                        <select id = "categoria" name="categoria" >
                             <% for ( let i = 0; i < categorias.length; i++){ %>
 
                             
-                            <option value="<%= categorias[i].category_id%>">
+                            <option value="<%= categorias[i].category_id%>" id = "">
                                 <%= categorias[i].category_name %>
                             </option>
                             <% } %>
@@ -57,7 +63,7 @@
                     </div>
                     <div>
                         <label for="subcategoria">Subcategorías:</label>
-                        <select name="subcategoria" >
+                        <select  id = "subcategoria" name="subcategoria" >
                             <% for ( let i = 0; i < subcategorias.length; i++){ %>
 
                             
@@ -77,6 +83,7 @@
             
             </div>
         </div>
+        <script src = "/js/validacionesFront.js"></script>
 </body>
 
 </html>

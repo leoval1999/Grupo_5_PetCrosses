@@ -513,4 +513,9 @@ a {
         -webkit-box-shadow: 5px 6px 5px 3px rgba(0, 0, 0, 0.27);
         -moz-box-shadow: 5px 6px 5px 3px rgba(0, 0, 0, 0.27);
     }
+
+    #destacado-1{
+        width: 200px;
+        height: 200px;
+    }
 }
