@@ -10,17 +10,21 @@ body{
 }
 .contenedor-petshop{
     padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
 }
 .contenedor-producto{
     background-color: #fff;
     border: solid 2px gray;
-    width: 90%;
-    margin: auto;
+    width: 30%;
+    margin: 20px;
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 10px;
 }
-
+.imagen-producto{
+    border: solid 1px black;
+}
 .precio-petshop{
     margin-top: 10px;
     text-align: center;
@@ -31,6 +35,8 @@ p{
     font-weight: bold;
 
 }
+
+
 #imagen-producto{
     width: 200px;
     height: 200px;

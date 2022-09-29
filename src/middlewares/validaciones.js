@@ -27,5 +27,7 @@ const validaciones = [
         return true;
     })
  ]
+ 
 
- module.exports = validaciones;  
+ module.exports = validaciones;
+ 

@@ -72,6 +72,15 @@
 .boton-editar{
     margin-right: 10px;
 }
+.boton-eliminar{
+    background-color: rgb(248, 217, 222);
+    border-radius: 15px;
+    padding: 10px;
+    border: solid 1px gray ;
+    color: black;
+    font-size: 14px;
+    font-weight:bold ;
+}
 #boton-finalizar{
     color: black;
     text-align: center;
@@ -163,6 +172,11 @@
         border-radius: 15px;
     }
     #boton-finalizar:hover {
+        background: pink ;
+        padding: 10px;
+        border: 2px solid black;
+    }
+    .boton-eliminar:hover {
         background: pink ;
         padding: 10px;
         border: 2px solid black;

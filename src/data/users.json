@@ -27,15 +27,5 @@
   "fechaNacimiento": "1111-11-11",
   "sexo": "Hombre",
   "imagenPerfil": "/img/users/imagenPerfil1661639456089.jpg"
- },
- {
-  "id": 4,
-  "nombre": "pedro",
-  "apellido": "molina",
-  "correo": "pedro@gmail.com",
-  "contrasenia": "$2a$10$nef6C6kMM88sWJhME6aqZeXPJS2fsH/KUKv1fkZfFYzOhrVNaYiUS",
-  "fechaNacimiento": "2022-02-01",
-  "sexo": "Mujer",
-  "imagenPerfil": "/img/users/imagenPerfil1661723735214.jpg"
  }
 ]

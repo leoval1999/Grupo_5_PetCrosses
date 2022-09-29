@@ -17,29 +17,53 @@
 <body class="body">
     <%- include('../partials/header') %>
 
-    <main>
-        <div class="perfilUsuario">
-            <h2>PERFIL <%= user.nombre %></h2>
-            <div>
-                <img src="<%= user.imagenPerfil %>" id = "imagenUsuario" alt="">
-                <ul class="lista-datos">
-                    <li><i class="fa-solid fa-at"></i>Correo: <%= user.correo %> </li>
-                    <li><i class="fa-solid fa-check"></i> Nombre: <%= user.nombre %> </li>
-                    <li><i class="fa-solid fa-check"></i> Apellido: <%= user.apellido %></li>
+        <main>
+            <div class="perfilUsuario">
+                <h2 class="titulo-perfil">PERFIL USUARIO
+                </h2>
+                <div>
+                    <img  class = "imagen-perfil" src="<%= user.user_image %>" id="imagenUsuario" alt="">
+                    <ul class="lista-datos">
+                        <li><i class="fa-solid fa-check"></i>Correo: <%= user.user_email %>
+                        </li>
+                        <li><i class="fa-solid fa-check"></i> Nombre: <%= user.user_name %>
+                        </li>
+                        <li><i class="fa-solid fa-check"></i> Apellido: <%= user.user_surname %>
+                        </li>
+                    </ul>
+                    <div>
+                        <div>
+                            <form action="/user/<%=user.user_id%>/borrar?_method=DELETE" method="POST">
+                                <button class="borrar-usuario" type="submit">BORRAR USUARIO</button>
+                            </form>
+    
+    
+                        </div>
+                        <div class="cerrar-sesion">
+                            
+                            <a href="/user/<%=user.user_id%>/editar">
+                                <h2>EDITAR USUARIO</h2>
+                                <i class="fa-solid fa-user-pen"></i>
+                            </a>
+    
+                        </div>
+                    </div>
                     
-                   
+                </div>
             </div>
-        </div>
-      
-        <div class="cerrar-sesion">
-            <h2>CERRAR SESIÓN</h2>
-            <a href="/cerrarSesion">
-                <i class="fa-solid fa-right-from-bracket"></i>
-            </a>
-            
-        </div>
-        
-    </main>
+
+            <div class="cerrar-sesion">
+               
+                <a href="/user/cerrarSesion">
+                    <h2>CERRAR SESIÓN</h2>
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                </a>
+
+            </div>
+
+
+
+        </main>
 
         <%- include('../partials/footer') %>
 </body>

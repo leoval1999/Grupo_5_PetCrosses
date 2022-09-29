@@ -32,3 +32,23 @@ ul{
     width: 100%;
     font-size: 20px;
 }
+
+.borrar-usuario{
+    font-size: 18px;
+    border: solid 2px black;
+    border-radius: 5px;
+    background: white;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: background-color .5s;
+}
+.borrar-usuario:hover {
+    background: rgb(236, 151, 164) ;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.imagen-perfil{
+    border: solid 2px black;
+}
