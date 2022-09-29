@@ -10,7 +10,7 @@ const invitado = require("../middlewares/invitado");
 const autenticado = require("../middlewares/autenticado");
 
 router.get("/", homeRoute.inicio);
-router.get("/citas", homeRoute.citas);
+//router.get("/citas", homeRoute.citas);
 router.get("/petshop",homeRoute.petshop);
 router.get("/test", homeRoute.test.funciona);
 

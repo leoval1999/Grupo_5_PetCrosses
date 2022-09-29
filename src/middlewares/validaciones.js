@@ -6,7 +6,7 @@ const validaciones = [
     body('nombre').notEmpty().withMessage('Complete su nombre'),
     body('apellido').notEmpty().withMessage('Complete su apellido'),
     body('correo').notEmpty().withMessage('Debe completar con un correo').bail().isEmail().withMessage('Debe ingresar un correo valido'),
-    body('contrasenia').notEmpty().withMessage('Las contraseñas deben ser iguales'),
+    body('contrasenia').notEmpty().withMessage('Debe escribir una contraseña'),
     body('fechaNacimiento').notEmpty().withMessage('Ingrese su fecha de nacimiento'),
     body('sexo').notEmpty().withMessage('Ingrese su sexo'),
     body('imagenPerfil').custom((value, { req }) => {
