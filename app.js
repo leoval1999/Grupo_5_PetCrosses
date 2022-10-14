@@ -3,14 +3,18 @@ const express = require("express");
 const session = require("express-session");
 const app = express();
 const path = require("path");
+const cors = require("cors");
 const methodOverride = require('method-override');
 app.use(methodOverride('_method'));
 const publicPath = path.join(__dirname,"/public");
 const homeRoute = require("./src/routes/mainRoutes");
 const userRoute = require("./src/routes/userRoutes");
 const productRoute = require("./src/routes/productRoutes");
+const apiRoute = require("./src/routes/apiRoutes");
 const productController = require("./src/controllers/productController");
 const administrador = require("./src/middlewares/administrador")
+
+app.use(cors());
 
 
 const port = process.env.PORT || 3000;
@@ -31,6 +35,7 @@ app.use(administrador);
 
 app.use("/products", productRoute);
 app.use("/user", userRoute);
+app.use("/api", apiRoute);
 app.use("/", homeRoute);
 
 
